@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abriu o Cofre — achados de verdade na Amazon e no Mercado Livre</title>
+<meta name="description" content="Garimpo diário de ofertas na Amazon e no Mercado Livre. Só entra aqui o que eu olharia duas vezes antes de comprar.">
+<meta name="theme-color" content="#0A0D12">
+<link rel="icon" href="logo.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abriu o Cofre">
+<meta property="og:description" content="Achados de verdade na Amazon e no Mercado Livre, garimpados um por um.">
+<meta property="og:image" content="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ── paleta ─────────────────────────────────────────────────────────────
+   A marca é uma porta de cofre entreaberta no escuro: o âmbar é a luz que
+   escapa pela fresta, o ciano é o metal. Página de tema único, escuro, de
+   propósito — o claro apagaria a fresta.                                  */
+:root{
+  --breu:      #0A0D12;
+  --aco:       #111823;
+  --aco-alto:  #16202D;
+  --risco:     #22303F;
+  --risco-luz: #2E4055;
+
+  --ciano:     #22D3EE;
+  --ciano-op:  rgba(34,211,238,.14);
+  --ambar:     #F59E0B;
+  --ambar-op:  rgba(245,158,11,.13);
+
+  --tinta:     #E8EFF7;
+  --tinta-2:   #A3B4C6;
+  --tinta-3:   #6D8096;
+
+  --amazon:    #FF9900;
+  --meli:      #FFE600;
+
+  --largura:   1080px;
+  --raio:      14px;
+  --sombra:    0 1px 0 rgba(255,255,255,.03) inset, 0 18px 44px -28px #000;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+html{ background:var(--breu); -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  background:var(--breu);
+  color:var(--tinta);
+  font:400 1rem/1.65 "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  overflow-x:hidden;
+}
+
+a{ color:inherit; }
+img{ max-width:100%; display:block; }
+:focus-visible{ outline:2px solid var(--ciano); outline-offset:3px; border-radius:4px; }
+
+.dentro{ width:100%; max-width:var(--largura); margin-inline:auto; padding-inline:1.25rem; }
+
+/* ══ topo ══════════════════════════════════════════════════════════════ */
+.topo{
+  position:relative; overflow:hidden;
+  padding:2.75rem 0 3rem;
+  border-bottom:1px solid var(--risco);
+}
+/* a fresta: a luz âmbar escapa POR TRÁS DA LOGO, não do meio do nada */
+.topo::before{
+  content:""; position:absolute; z-index:0;
+  top:-160px; left:max(1.25rem, calc(50% - var(--largura)/2 + 1.25rem));
+  width:520px; height:460px;
+  background:
+    radial-gradient(closest-side, rgba(245,158,11,.22), transparent 70%),
+    radial-gradient(closest-side at 62% 58%, rgba(34,211,238,.11), transparent 66%);
+  filter:blur(10px); pointer-events:none;
+}
+.topo > *{ position:relative; z-index:1; }
+
+.marca{ display:flex; align-items:center; gap:.95rem; }
+/* o PNG tem fundo chapado; screen apaga o quadrado e deixa só o brilho */
+.marca img{ width:60px; height:60px; flex:0 0 auto; }
+.marca-nome{
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:700; font-size:1.55rem; line-height:1.05;
+  letter-spacing:.06em; text-transform:uppercase;
+}
+.marca-nome b{ color:var(--ambar); font-weight:700; }
+.marca-sub{
+  font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--tinta-3); margin-top:.3rem;
+}
+
+.chamada{
+  margin-top:2rem;
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:600; font-size:clamp(1.9rem, 6.4vw, 3rem); line-height:1.12;
+  letter-spacing:-.005em; text-wrap:balance; max-width:19ch;
+}
+.chamada em{ font-style:normal; color:var(--ambar); }
+.linha-fina{
+  margin-top:1rem; max-width:46ch;
+  font-size:1.03rem; color:var(--tinta-2);
+}
+
+/* ══ faixa de transparência — parte da marca, não letra miúda ══════════ */
+.transparencia{
+  margin-top:1.9rem; padding:.85rem 1.05rem;
+  display:flex; gap:.8rem; align-items:flex-start;
+  background:var(--ambar-op);
+  border:1px solid rgba(245,158,11,.3);
+  border-radius:var(--raio);
+  font-size:.9rem; color:#F7DCA8; max-width:62ch;
+}
+.transparencia svg{ flex:0 0 auto; margin-top:.16rem; }
+.transparencia b{ color:var(--ambar); font-weight:600; }
+
+/* ══ seções ════════════════════════════════════════════════════════════ */
+section{ padding:3.25rem 0; }
+section + section{ border-top:1px solid var(--risco); }
+@media (max-width:640px){
+  .topo{ padding:2.25rem 0 2.25rem; }
+  section{ padding:2.4rem 0; }
+  .chamada{ margin-top:1.6rem; }
+}
+
+.cabeca{ margin-bottom:1.6rem; }
+.olho{
+  display:inline-block; margin-bottom:.55rem;
+  font-size:.68rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--ciano);
+}
+h2{
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:600; font-size:clamp(1.35rem, 4vw, 1.75rem); line-height:1.2;
+  letter-spacing:.01em; text-wrap:balance;
+}
+.cabeca p{ margin-top:.5rem; color:var(--tinta-2); max-width:56ch; font-size:.98rem; }
+
+/* ══ cards de oferta ═══════════════════════════════════════════════════ */
+.grade{
+  display:grid; gap:1rem;
+  grid-template-columns:repeat(auto-fill, minmax(268px, 1fr));
+}
+
+.card{
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+  background:var(--aco);
+  border:1px solid var(--risco);
+  border-radius:var(--raio);
+  box-shadow:var(--sombra);
+  text-decoration:none;
+  transition:border-color .22s ease, transform .22s ease, background .22s ease;
+}
+/* a fresta do cofre: fio de luz na borda esquerda, que se abre no hover */
+.card::before{
+  content:""; position:absolute; inset:0 auto 0 0; width:3px;
+  background:linear-gradient(180deg, transparent, var(--acento), transparent);
+  opacity:.5; transform:scaleX(.66); transform-origin:left center;
+  transition:opacity .22s ease, transform .22s ease;
+}
+.card:hover, .card:focus-visible{
+  border-color:var(--risco-luz); background:var(--aco-alto); transform:translateY(-2px);
+}
+.card:hover::before, .card:focus-visible::before{ opacity:1; transform:scaleX(1); }
+@media (prefers-reduced-motion:reduce){
+  .card, .card::before{ transition:none; }
+  .card:hover{ transform:none; }
+}
+
+.card--amazon{ --acento:var(--amazon); }
+.card--meli{   --acento:var(--meli); }
+
+.card-foto{
+  position:relative; aspect-ratio:4/3;
+  background:#0D141D; border-bottom:1px solid var(--risco);
+  display:grid; place-items:center; overflow:hidden;
+}
+.card-foto img{ width:100%; height:100%; object-fit:contain; padding:.9rem; }
+/* sem foto do produto, o cofre entra como marca d'água — discreta, para não
+   virar o assunto do card nem competir com três cofres iguais em fila */
+.card-foto .vazio{ opacity:.11; width:38%; height:auto; }
+
+.selo{
+  position:absolute; top:.7rem; left:.7rem;
+  padding:.28rem .58rem; border-radius:6px;
+  background:var(--breu); border:1px solid var(--acento);
+  color:var(--acento);
+  font-size:.65rem; font-weight:600; letter-spacing:.09em; text-transform:uppercase;
+}
+
+.card-corpo{ padding:1.05rem 1.1rem 1.15rem; display:flex; flex-direction:column; gap:.6rem; flex:1; }
+
+.loja{
+  display:flex; align-items:center; gap:.42rem;
+  font-size:.68rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--tinta-3);
+}
+.loja::before{
+  content:""; width:7px; height:7px; border-radius:50%; background:var(--acento);
+}
+
+.card h3{
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:600; font-size:1.06rem; line-height:1.3; text-wrap:balance;
+}
+.card p{ font-size:.92rem; color:var(--tinta-2); }
+
+/* o preço é a régua do rodapé do card: empurrado para baixo e com altura
+   fixa, o botão de todos os cards da linha fica na mesma altura */
+.preco{
+  margin-top:auto; min-height:2.15rem;
+  display:flex; align-items:flex-end;
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:700; font-size:1.45rem; color:var(--tinta);
+  font-variant-numeric:tabular-nums; letter-spacing:.01em;
+}
+.preco small{ font-size:.78rem; font-weight:500; color:var(--tinta-3); letter-spacing:.02em; }
+
+.ir{
+  padding-top:.15rem;
+  display:flex; align-items:center; gap:.4rem;
+  font-size:.87rem; font-weight:600; color:var(--acento);
+}
+.ir svg{ transition:translate .22s ease; }
+.card:hover .ir svg{ translate:3px 0; }
+@media (prefers-reduced-motion:reduce){ .card:hover .ir svg{ translate:0; } }
+
+/* ══ estado vazio ══════════════════════════════════════════════════════ */
+.vazio-bloco{
+  padding:2.6rem 1.5rem; text-align:center;
+  max-width:620px; margin-inline:auto;
+  border:1px dashed var(--risco-luz); border-radius:var(--raio);
+  background:linear-gradient(180deg, rgba(34,211,238,.035), transparent);
+}
+.vazio-bloco img{ width:64px; margin:0 auto .95rem; opacity:.45; }
+.vazio-bloco h3{
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:600; font-size:1.12rem; margin-bottom:.45rem;
+}
+.vazio-bloco p{ color:var(--tinta-2); font-size:.95rem; max-width:44ch; margin-inline:auto; }
+
+/* ══ atalhos (lista, não card — é navegação, não produto) ══════════════ */
+.atalhos{ display:flex; flex-direction:column; gap:.55rem; }
+.atalho{
+  display:grid; grid-template-columns:1fr auto; align-items:center; gap:1rem;
+  padding:1rem 1.15rem;
+  background:var(--aco); border:1px solid var(--risco); border-radius:var(--raio);
+  text-decoration:none;
+  transition:border-color .2s ease, background .2s ease;
+}
+.atalho:hover, .atalho:focus-visible{ border-color:var(--amazon); background:var(--aco-alto); }
+.atalho h3{
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:600; font-size:1.02rem; margin-bottom:.15rem;
+}
+.atalho p{ font-size:.89rem; color:var(--tinta-2); }
+.atalho span{
+  display:flex; align-items:center; gap:.35rem;
+  font-size:.78rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--amazon); white-space:nowrap;
+}
+@media (max-width:560px){
+  .atalho{ grid-template-columns:1fr; gap:.6rem; }
+}
+
+/* ══ como eu escolho — conteúdo próprio ════════════════════════════════ */
+.criterios{
+  display:grid; gap:1.05rem 2rem;
+  grid-template-columns:repeat(auto-fit, minmax(255px, 1fr));
+  counter-reset:crit;
+}
+.criterio{ counter-increment:crit; padding-left:2.6rem; position:relative; }
+.criterio::before{
+  content:counter(crit, decimal-leading-zero);
+  position:absolute; left:0; top:.06rem;
+  font-family:"Chakra Petch", monospace; font-weight:700; font-size:.92rem;
+  color:var(--ciano); letter-spacing:.04em;
+}
+.criterio h3{
+  font-family:"Chakra Petch", "Segoe UI", sans-serif;
+  font-weight:600; font-size:1.02rem; margin-bottom:.28rem;
+}
+.criterio p{ font-size:.93rem; color:var(--tinta-2); }
+
+/* ══ rodapé ════════════════════════════════════════════════════════════ */
+.rodape{
+  border-top:1px solid var(--risco);
+  padding:2.5rem 0 3rem;
+  font-size:.88rem; color:var(--tinta-3);
+}
+.rodape-topo{
+  display:flex; flex-wrap:wrap; gap:1.5rem 2.5rem;
+  align-items:flex-start; justify-content:space-between;
+  padding-bottom:1.6rem; margin-bottom:1.6rem;
+  border-bottom:1px solid var(--risco);
+}
+.rodape-marca{ display:flex; align-items:center; gap:.7rem; }
+.rodape-marca img{ width:34px; height:34px; opacity:.85; }
+.rodape-marca strong{
+  font-family:"Chakra Petch", sans-serif; font-weight:600;
+  letter-spacing:.07em; text-transform:uppercase; color:var(--tinta-2); font-size:.9rem;
+}
+.canais{ display:flex; flex-wrap:wrap; gap:.55rem; }
+.canal{
+  display:inline-flex; align-items:center; gap:.42rem;
+  padding:.5rem .85rem; border-radius:99px;
+  border:1px solid var(--risco); background:var(--aco);
+  color:var(--tinta-2); text-decoration:none;
+  font-size:.85rem; font-weight:500;
+  transition:border-color .2s ease, color .2s ease;
+}
+.canal:hover, .canal:focus-visible{ border-color:var(--ciano); color:var(--ciano); }
+
+.legal{ max-width:74ch; }
+.legal p + p{ margin-top:.7rem; }
+.legal strong{ color:var(--tinta-2); font-weight:600; }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="dentro">
+    <div class="marca">
+      <img src="logo.png" alt="" width="60" height="60">
+      <div>
+        <div class="marca-nome">Abriu o <b>Cofre</b></div>
+        <div class="marca-sub">Achados Amazon &amp; Mercado Livre</div>
+      </div>
+    </div>
+
+    <h1 class="chamada">O preço bom existe. Ele só <em>não fica à vista</em>.</h1>
+    <p class="linha-fina">
+      Eu garimpo todo dia na Amazon e no Mercado Livre e trago para cá o que
+      passou no meu próprio teste: preço que caiu de verdade, vendedor com
+      histórico e produto que eu compraria. O resto fica de fora.
+    </p>
+
+    <div class="transparencia">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/><path d="M12 16v-5"/><path d="M12 8h.01"/>
+      </svg>
+      <p>
+        <b>Sem letra miúda:</b> os links desta página são de afiliado. Se você
+        comprar por eles, eu ganho uma comissão da loja — e você paga
+        exatamente o mesmo preço. É assim que a página se paga. #publi
+      </p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="ofertas">
+    <div class="dentro">
+      <div class="cabeca">
+        <span class="olho">Garimpo do dia</span>
+        <h2>Ofertas escolhidas a dedo</h2>
+        <p>
+          Uma a uma, olhadas antes de entrar aqui. Some da lista quando a
+          promoção acaba — se está no ar, ainda vale.
+        </p>
+      </div>
+      <div id="lista-ofertas" class="grade"></div>
+    </div>
+  </section>
+
+  <section id="atalhos">
+    <div class="dentro">
+      <div class="cabeca">
+        <span class="olho">Enquanto isso</span>
+        <h2>Direto nas promoções da Amazon</h2>
+        <p>
+          Três páginas que a própria Amazon atualiza sozinha, várias vezes por
+          dia. Bom lugar para caçar por conta própria entre um garimpo e outro.
+        </p>
+      </div>
+      <div id="lista-atalhos" class="atalhos"></div>
+    </div>
+  </section>
+
+  <section id="criterios">
+    <div class="dentro">
+      <div class="cabeca">
+        <span class="olho">O método</span>
+        <h2>Como eu decido o que entra aqui</h2>
+        <p>
+          Promoção boa é rara; anúncio de promoção é o que não falta. Estes são
+          os quatro filtros que um achado precisa passar antes de virar card.
+        </p>
+      </div>
+      <div class="criterios">
+        <div class="criterio">
+          <h3>O desconto tem que ser real</h3>
+          <p>
+            Antes de publicar, eu olho o histórico de preço do produto. Se ele
+            subiu na semana passada só para "cair" hoje, não é oferta — é
+            encenação, e não entra.
+          </p>
+        </div>
+        <div class="criterio">
+          <h3>Vendedor com passado</h3>
+          <p>
+            Loja oficial ou vendedor com reputação alta e volume de vendas.
+            Preço ótimo de vendedor recém-nascido costuma sair caro depois.
+          </p>
+        </div>
+        <div class="criterio">
+          <h3>Eu leio as avaliações ruins</h3>
+          <p>
+            As de cinco estrelas todo produto tem. Eu leio as de uma e duas: é
+            lá que mora o defeito que só dá as caras no terceiro mês de uso.
+          </p>
+        </div>
+        <div class="criterio">
+          <h3>Eu compraria?</h3>
+          <p>
+            O último filtro é o mais simples. Se eu não gastaria o meu dinheiro
+            naquilo, não peço que você gaste o seu. Nenhuma comissão paga isso.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="dentro">
+    <div class="rodape-topo">
+      <div class="rodape-marca">
+        <img src="logo.png" alt="" width="34" height="34">
+        <strong>Abriu o Cofre</strong>
+      </div>
+      <nav class="canais" aria-label="Onde me encontrar">
+        <a class="canal" href="https://www.instagram.com/abriuocofre/" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>
+          </svg>
+          Instagram
+        </a>
+      </nav>
+    </div>
+
+    <div class="legal">
+      <p>
+        <strong>Aviso de afiliado.</strong> O Abriu o Cofre participa do
+        Programa de Associados da Amazon.com.br e do Programa de Afiliados do
+        Mercado Livre. Como associado, recebo por compras qualificadas feitas
+        através dos links desta página, sem nenhum custo adicional para você.
+      </p>
+      <p>
+        <strong>Sobre preços.</strong> Preços e disponibilidade mudam o tempo
+        todo e valem apenas o que estiver escrito na página da loja no momento
+        da compra. Confira sempre antes de finalizar o pedido.
+      </p>
+      <p>
+        Marcas, logotipos e nomes citados pertencem aos seus respectivos donos.
+        Esta página não é operada pela Amazon nem pelo Mercado Livre.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="ofertas.js"></script>
+<script>
+(function () {
+  var LOJAS = {
+    amazon:       { nome: "Amazon",        classe: "card--amazon", botao: "Ver na Amazon" },
+    mercadolivre: { nome: "Mercado Livre", classe: "card--meli",   botao: "Ver no Mercado Livre" }
+  };
+
+  var SETA = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M13 6l6 6-6 6"/></svg>';
+
+  function seguro(t) {
+    return String(t == null ? "" : t)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  /* ---- ofertas ---- */
+  var alvo = document.getElementById("lista-ofertas");
+  var lista = (typeof OFERTAS !== "undefined" && OFERTAS) ? OFERTAS : [];
+
+  if (!lista.length) {
+    alvo.className = "";
+    alvo.innerHTML =
+      '<div class="vazio-bloco">' +
+        '<img src="logo.png" alt="" width="64" height="64">' +
+        '<h3>O cofre está sendo carregado</h3>' +
+        '<p>Os primeiros achados entram aqui nos próximos dias. Enquanto isso, ' +
+        'os atalhos logo abaixo levam direto às promoções da Amazon.</p>' +
+      '</div>';
+  } else {
+    alvo.innerHTML = lista.map(function (o) {
+      var loja = LOJAS[o.loja] || LOJAS.amazon;
+      var ehAmazon = (o.loja === "amazon");
+
+      var foto = o.imagem
+        ? '<img src="' + seguro(o.imagem) + '" alt="" loading="lazy">'
+        : '<img class="vazio" src="logo.png" alt="" loading="lazy">';
+
+      var selo = o.selo
+        ? '<span class="selo">' + seguro(o.selo) + '</span>'
+        : '';
+
+      /* preço só aparece no Mercado Livre — o contrato da Amazon proíbe
+         que o preço seja escrito fora da própria Amazon. */
+      var preco = (!ehAmazon && o.preco)
+        ? '<div class="preco">' + seguro(o.preco) + '</div>'
+        : '<div class="preco"><small>preço atualizado na ' + loja.nome + '</small></div>';
+
+      return '' +
+        '<a class="card ' + loja.classe + '" href="' + seguro(o.link) + '"' +
+          ' target="_blank" rel="noopener nofollow sponsored">' +
+          '<div class="card-foto">' + foto + selo + '</div>' +
+          '<div class="card-corpo">' +
+            '<span class="loja">' + loja.nome + '</span>' +
+            '<h3>' + seguro(o.titulo) + '</h3>' +
+            (o.texto ? '<p>' + seguro(o.texto) + '</p>' : '') +
+            preco +
+            '<span class="ir">' + loja.botao + SETA + '</span>' +
+          '</div>' +
+        '</a>';
+    }).join("");
+  }
+
+  /* ---- atalhos ---- */
+  var atalhos = (typeof ATALHOS !== "undefined" && ATALHOS) ? ATALHOS : [];
+  document.getElementById("lista-atalhos").innerHTML = atalhos.map(function (a) {
+    return '' +
+      '<a class="atalho" href="' + seguro(a.link) + '"' +
+        ' target="_blank" rel="noopener nofollow sponsored">' +
+        '<div>' +
+          '<h3>' + seguro(a.titulo) + '</h3>' +
+          '<p>' + seguro(a.texto) + '</p>' +
+        '</div>' +
+        '<span>Abrir na Amazon' + SETA + '</span>' +
+      '</a>';
+  }).join("");
+})();
+</script>
+
+</body>
+</html>
