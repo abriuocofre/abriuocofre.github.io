@@ -1,5 +1,5 @@
 {
-  "atualizado": "15/08/2026",
+  "atualizado": "16/08/2026",
   "base": "https://abriuocofre.github.io",
   "cartoes": [
     {
@@ -93,6 +93,12 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-098.png"
     },
     {
+      "codigo": "mot-100",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes/mot-100.png",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-100.png"
+    },
+    {
       "codigo": "pen-001",
       "familia": "pen",
       "url": "https://abriuocofre.github.io/cartoes/pen-001.png",
@@ -135,6 +141,12 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/pen-034.png"
     },
     {
+      "codigo": "pen-106",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes/pen-106.png",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-106.png"
+    },
+    {
       "codigo": "pia-b01",
       "familia": "pia",
       "url": "https://abriuocofre.github.io/cartoes/pia-b01.png",
@@ -157,6 +169,12 @@
       "familia": "pia",
       "url": "https://abriuocofre.github.io/cartoes/pia-b04.png",
       "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b04.png"
+    },
+    {
+      "codigo": "pia-b05",
+      "familia": "pia",
+      "url": "https://abriuocofre.github.io/cartoes/pia-b05.png",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b05.png"
     }
   ]
 }
