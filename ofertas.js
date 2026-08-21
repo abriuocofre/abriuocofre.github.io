@@ -289,15 +289,6 @@ const OFERTAS = [
     link:   "https://www.amazon.com.br/dp/B09B8VGCR8?tag=abriuocofre-20"
   },
   {
-    loja:   "mercadolivre",
-    titulo: "Kit 10 pares de meias",
-    texto:  "Dez pares de uma vez: a gaveta para de ter meia sem par.",
-    preco:  "",
-    selo:   "+100 mil vendidos",
-    imagem: "",
-    link:   "https://meli.la/1TqVyje"
-  },
-  {
     loja:   "amazon",
     titulo: "Kindle 11ª geração",
     texto:  "Lê no sol, na cama e no ônibus sem cansar a vista.",
@@ -341,15 +332,6 @@ const OFERTAS = [
     selo:   "passou no corte do cofre",
     imagem: "",
     link:   "https://www.amazon.com.br/dp/B0CGY1H894?tag=abriuocofre-20"
-  },
-  {
-    loja:   "mercadolivre",
-    titulo: "Kit 2 calças jogger",
-    texto:  "Duas de uma vez: uma na máquina e a outra no corpo.",
-    preco:  "",
-    selo:   "+100 mil vendidas",
-    imagem: "",
-    link:   "https://meli.la/1AcRLNw"
   },
   {
     loja:   "amazon",
