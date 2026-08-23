@@ -55,15 +55,6 @@ const OFERTAS = [
     link:   "https://www.amazon.com.br/dp/B0BJFJGW4B?tag=abriuocofre-20"
   },
   {
-    loja:   "mercadolivre",
-    titulo: "Máquina de acabamento",
-    texto:  "O acerto da nuca e da barba em casa, entre um corte e outro.",
-    preco:  "",
-    selo:   "+50 mil vendidos",
-    imagem: "",
-    link:   "https://meli.la/2LCk5F7"
-  },
-  {
     loja:   "amazon",
     titulo: "Caixa de som JBL Go 4",
     texto:  "Som de bolso que não morre com respingo de piscina.",
@@ -125,15 +116,6 @@ const OFERTAS = [
     selo:   "passou no corte do cofre",
     imagem: "",
     link:   "https://www.amazon.com.br/dp/B0F9PDYH3M?tag=abriuocofre-20"
-  },
-  {
-    loja:   "mercadolivre",
-    titulo: "Carregador turbo 40 W",
-    texto:  "Carrega dois aparelhos ao mesmo tempo, sem brigar pela tomada.",
-    preco:  "",
-    selo:   "+50 mil vendidos",
-    imagem: "",
-    link:   "https://meli.la/2YTn5cY"
   },
   {
     loja:   "amazon",
