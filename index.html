@@ -22,6 +22,51 @@
 <meta name="twitter:title" content="Abriu o Cofre">
 <meta name="twitter:image" content="https://abriuocofre.github.io/marca/og-cofre-1200x630.jpg">
 
+<link rel="canonical" href="https://abriuocofre.github.io/">
+
+<!-- Dados estruturados: é assim que o Google entende que existe uma marca por
+     trás da página, e não uma página solta. De propósito SEM preço: o contrato
+     da Amazon proíbe escrever preço fora da Amazon. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://abriuocofre.github.io/#marca",
+      "name": "Abriu o Cofre",
+      "url": "https://abriuocofre.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://abriuocofre.github.io/logo.png"
+      },
+      "description": "Garimpo diário de ofertas na Amazon e no Mercado Livre.",
+      "sameAs": [
+        "https://www.instagram.com/abriuocofre/",
+        "https://t.me/abriuocofre"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://abriuocofre.github.io/#site",
+      "url": "https://abriuocofre.github.io/",
+      "name": "Abriu o Cofre",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://abriuocofre.github.io/#marca" }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://abriuocofre.github.io/#pagina",
+      "url": "https://abriuocofre.github.io/",
+      "name": "Abriu o Cofre — achados de verdade na Amazon e no Mercado Livre",
+      "description": "Garimpo diário de ofertas na Amazon e no Mercado Livre. Só entra aqui o que eu olharia duas vezes antes de comprar.",
+      "isPartOf": { "@id": "https://abriuocofre.github.io/#site" },
+      "inLanguage": "pt-BR"
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -327,6 +372,19 @@ h2{
 }
 .canal:hover, .canal:focus-visible{ border-color:var(--ciano); color:var(--ciano); }
 
+.rodape-catalogo{
+  max-width:60ch; margin-bottom:1.6rem;
+  padding-bottom:1.6rem; border-bottom:1px solid var(--risco);
+  color:var(--tinta-2);
+}
+.rodape-catalogo a{
+  color:var(--ciano); text-decoration:none;
+  border-bottom:1px solid rgba(34,211,238,.35); padding-bottom:1px;
+}
+.rodape-catalogo a:hover, .rodape-catalogo a:focus-visible{
+  border-bottom-color:var(--ciano);
+}
+
 .legal{ max-width:74ch; }
 .legal p + p{ margin-top:.7rem; }
 .legal strong{ color:var(--tinta-2); font-weight:600; }
@@ -456,6 +514,11 @@ h2{
         </a>
       </nav>
     </div>
+
+    <p class="rodape-catalogo">
+      Cada achado também tem página própria, com o que é e o que conferir antes
+      de comprar: <a href="catalogo.html">ver o catálogo completo</a>.
+    </p>
 
     <div class="legal">
       <p>

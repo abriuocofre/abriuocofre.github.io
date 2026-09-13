@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de achados — Abriu o Cofre</title>
+<meta name="description" content="Todos os 56 achados do Abriu o Cofre, um por um, com página própria: o que é, por que entrou e o que conferir antes de comprar.">
+<meta name="theme-color" content="#0A0D12">
+<link rel="icon" href="https://abriuocofre.github.io/logo.png">
+<link rel="canonical" href="https://abriuocofre.github.io/catalogo.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Catálogo de achados — Abriu o Cofre">
+<meta property="og:description" content="Todos os 56 achados do Abriu o Cofre, um por um, com página própria: o que é, por que entrou e o que conferir antes de comprar.">
+<meta property="og:image" content="https://abriuocofre.github.io/marca/og-cofre-1200x630.jpg">
+<meta property="og:url" content="https://abriuocofre.github.io/catalogo.html">
+<meta property="og:site_name" content="Abriu o Cofre">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catálogo de achados — Abriu o Cofre">
+<meta name="twitter:image" content="https://abriuocofre.github.io/marca/og-cofre-1200x630.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --breu:#0A0D12; --aco:#111823; --aco-alto:#16202D;
+  --risco:#22303F; --risco-luz:#2E4055;
+  --ciano:#22D3EE; --ambar:#F59E0B; --ambar-op:rgba(245,158,11,.13);
+  --tinta:#E8EFF7; --tinta-2:#A3B4C6; --tinta-3:#6D8096;
+  --largura:760px; --raio:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--breu);-webkit-text-size-adjust:100%}
+body{background:var(--breu);color:var(--tinta);
+  font:400 1rem/1.65 "IBM Plex Sans","Segoe UI",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--ciano);outline-offset:3px;border-radius:4px}
+.dentro{width:100%;max-width:var(--largura);margin-inline:auto;padding-inline:1.25rem}
+
+.topo{border-bottom:1px solid var(--risco);padding-block:1.15rem}
+.marca{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.marca img{width:40px;height:40px;flex:0 0 auto}
+.marca-nome{font-family:"Chakra Petch","Segoe UI",sans-serif;font-weight:700;
+  font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase}
+.marca-nome b{color:var(--ambar);font-weight:700}
+
+.trilha{font-size:.78rem;color:var(--tinta-3);padding-block:1rem .25rem}
+.trilha a{color:var(--tinta-2)}
+
+main{padding-block:.5rem 3rem}
+.loja-tag{display:inline-block;font-size:.7rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--tinta-3);margin-bottom:.5rem}
+h1{font-family:"Chakra Petch","Segoe UI",sans-serif;font-weight:600;
+  font-size:clamp(1.6rem,5.2vw,2.3rem);line-height:1.15;text-wrap:balance}
+.selo{display:inline-block;margin-top:.85rem;padding:.3rem .7rem;border-radius:999px;
+  background:var(--ambar-op);color:var(--ambar);font-size:.76rem;font-weight:600;
+  letter-spacing:.02em}
+.resumo{margin-top:1.1rem;font-size:1.08rem;color:var(--tinta-2);max-width:52ch}
+.preco{margin-top:1rem;font-family:"Chakra Petch","Segoe UI",sans-serif;
+  font-size:1.5rem;font-weight:700;color:var(--ciano)}
+.preco small{display:block;font-family:inherit;font-size:.72rem;font-weight:400;
+  letter-spacing:.02em;color:var(--tinta-3);margin-top:.2rem}
+.sem-preco{margin-top:1rem;font-size:.86rem;color:var(--tinta-3)}
+
+.foto{margin-top:1.6rem;border:1px solid var(--risco);border-radius:var(--raio);
+  background:var(--aco);overflow:hidden}
+.foto img{width:100%;height:auto}
+
+.ir{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.7rem;
+  padding:.9rem 1.4rem;border-radius:999px;background:var(--ambar);color:#1A1206;
+  font-weight:600;text-decoration:none;font-size:1rem}
+.ir:hover{filter:brightness(1.06)}
+
+.bloco{margin-top:2.4rem;border:1px solid var(--risco);border-radius:var(--raio);
+  background:var(--aco);padding:1.25rem 1.35rem}
+.bloco h2{font-family:"Chakra Petch","Segoe UI",sans-serif;font-size:1rem;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--tinta-2);margin-bottom:.8rem}
+.bloco ul{list-style:none;display:grid;gap:.6rem}
+.bloco li{position:relative;padding-left:1.15rem;color:var(--tinta-2);font-size:.95rem}
+.bloco li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;
+  border-radius:2px;background:var(--ciano)}
+
+.aviso{margin-top:2.4rem;border-left:3px solid var(--risco-luz);padding-left:1rem;
+  color:var(--tinta-3);font-size:.86rem;max-width:58ch}
+
+.vizinhos{margin-top:2.8rem}
+.vizinhos h2{font-family:"Chakra Petch","Segoe UI",sans-serif;font-size:1rem;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--tinta-2);margin-bottom:.9rem}
+.grade{display:grid;gap:.7rem;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.grade a{display:block;text-decoration:none;border:1px solid var(--risco);
+  border-radius:var(--raio);background:var(--aco);padding:.85rem 1rem;
+  transition:border-color .15s}
+.grade a:hover{border-color:var(--risco-luz)}
+.grade span{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tinta-3);margin-bottom:.25rem}
+.grade strong{display:block;font-weight:600;font-size:.97rem;line-height:1.35}
+
+.rodape{border-top:1px solid var(--risco);padding-block:1.6rem 2.6rem;
+  color:var(--tinta-3);font-size:.84rem}
+.rodape a{color:var(--tinta-2)}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://abriuocofre.github.io/catalogo.html",
+      "url": "https://abriuocofre.github.io/catalogo.html",
+      "name": "Catálogo de achados — Abriu o Cofre",
+      "description": "Todos os 56 achados do Abriu o Cofre, um por um, com página própria: o que é, por que entrou e o que conferir antes de comprar.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://abriuocofre.github.io/#site",
+        "name": "Abriu o Cofre",
+        "url": "https://abriuocofre.github.io/"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Achados do cofre",
+      "numberOfItems": 56,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Air fryer 5 litros",
+          "url": "https://abriuocofre.github.io/oferta/air-fryer-5-litros.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Creatina 1 kg",
+          "url": "https://abriuocofre.github.io/oferta/creatina-1-kg.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Air fryer 8 litros",
+          "url": "https://abriuocofre.github.io/oferta/air-fryer-8-litros.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Caixa de som JBL Go 4",
+          "url": "https://abriuocofre.github.io/oferta/caixa-de-som-jbl-go-4.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Bicicleta aro 29",
+          "url": "https://abriuocofre.github.io/oferta/bicicleta-aro-29.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "JBL Boombox 3",
+          "url": "https://abriuocofre.github.io/oferta/jbl-boombox-3.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Parafusadeira e furadeira",
+          "url": "https://abriuocofre.github.io/oferta/parafusadeira-e-furadeira.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Organizador colmeia",
+          "url": "https://abriuocofre.github.io/oferta/organizador-colmeia.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Lavadora portátil",
+          "url": "https://abriuocofre.github.io/oferta/lavadora-portatil.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Smartwatch Amazfit Active 2",
+          "url": "https://abriuocofre.github.io/oferta/smartwatch-amazfit-active-2.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Galaxy Watch7 44 mm",
+          "url": "https://abriuocofre.github.io/oferta/galaxy-watch7-44-mm.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Gel-creme facial",
+          "url": "https://abriuocofre.github.io/oferta/gel-creme-facial.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "Aspirador automotivo",
+          "url": "https://abriuocofre.github.io/oferta/aspirador-automotivo.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Air fryer 4 litros",
+          "url": "https://abriuocofre.github.io/oferta/air-fryer-4-litros.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "Jogo de lençol Queen",
+          "url": "https://abriuocofre.github.io/oferta/jogo-de-lencol-queen.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Kit 2 câmeras wi-fi",
+          "url": "https://abriuocofre.github.io/oferta/kit-2-cameras-wi-fi.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "Cafeteira Mondial",
+          "url": "https://abriuocofre.github.io/oferta/cafeteira-mondial.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "Calça jeans masculina",
+          "url": "https://abriuocofre.github.io/oferta/calca-jeans-masculina.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "Escova elétrica Oral-B",
+          "url": "https://abriuocofre.github.io/oferta/escova-eletrica-oral-b.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "Kit 2 travesseiros",
+          "url": "https://abriuocofre.github.io/oferta/kit-2-travesseiros.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "Oral-B PRO Series 1",
+          "url": "https://abriuocofre.github.io/oferta/oral-b-pro-series-1.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "Tênis Kappa Park 2.0",
+          "url": "https://abriuocofre.github.io/oferta/tenis-kappa-park-2-0.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "Carregador portátil",
+          "url": "https://abriuocofre.github.io/oferta/carregador-portatil.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "Garrafa Stanley 473 ml",
+          "url": "https://abriuocofre.github.io/oferta/garrafa-stanley-473-ml.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "Liquidificador 1400 W",
+          "url": "https://abriuocofre.github.io/oferta/liquidificador-1400-w.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "Faqueiro 24 peças",
+          "url": "https://abriuocofre.github.io/oferta/faqueiro-24-pecas.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "name": "Echo Dot com Alexa",
+          "url": "https://abriuocofre.github.io/oferta/echo-dot-com-alexa.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "name": "Kindle 11ª geração",
+          "url": "https://abriuocofre.github.io/oferta/kindle-11a-geracao.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "name": "Kit 50 cabides",
+          "url": "https://abriuocofre.github.io/oferta/kit-50-cabides.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 30,
+          "name": "Jogo de panelas",
+          "url": "https://abriuocofre.github.io/oferta/jogo-de-panelas.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 31,
+          "name": "Hidratante corporal",
+          "url": "https://abriuocofre.github.io/oferta/hidratante-corporal.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 32,
+          "name": "Garrafa térmica Stanley 1 litro",
+          "url": "https://abriuocofre.github.io/oferta/garrafa-termica-stanley-1-litro.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 33,
+          "name": "Filtro de linha",
+          "url": "https://abriuocofre.github.io/oferta/filtro-de-linha.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 34,
+          "name": "Aparador de pelos",
+          "url": "https://abriuocofre.github.io/oferta/aparador-de-pelos.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 35,
+          "name": "Mop giratório",
+          "url": "https://abriuocofre.github.io/oferta/mop-giratorio.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 36,
+          "name": "Kit 3 body splash",
+          "url": "https://abriuocofre.github.io/oferta/kit-3-body-splash.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 37,
+          "name": "Câmera wi-fi",
+          "url": "https://abriuocofre.github.io/oferta/camera-wi-fi.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 38,
+          "name": "Kit Wella Nutri-Enrich",
+          "url": "https://abriuocofre.github.io/oferta/kit-wella-nutri-enrich.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 39,
+          "name": "Repetidor de wi-fi",
+          "url": "https://abriuocofre.github.io/oferta/repetidor-de-wi-fi.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 40,
+          "name": "Palmilha de gel",
+          "url": "https://abriuocofre.github.io/oferta/palmilha-de-gel.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 41,
+          "name": "Protetor solar facial",
+          "url": "https://abriuocofre.github.io/oferta/protetor-solar-facial.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 42,
+          "name": "Microfone de lapela",
+          "url": "https://abriuocofre.github.io/oferta/microfone-de-lapela.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 43,
+          "name": "Sanduicheira e grill",
+          "url": "https://abriuocofre.github.io/oferta/sanduicheira-e-grill.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 44,
+          "name": "Jaqueta corta-vento",
+          "url": "https://abriuocofre.github.io/oferta/jaqueta-corta-vento.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 45,
+          "name": "Vaporizador de roupas",
+          "url": "https://abriuocofre.github.io/oferta/vaporizador-de-roupas.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 46,
+          "name": "Varal de chão 3 andares",
+          "url": "https://abriuocofre.github.io/oferta/varal-de-chao-3-andares.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 47,
+          "name": "Fone Redmi Buds 4",
+          "url": "https://abriuocofre.github.io/oferta/fone-redmi-buds-4.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 48,
+          "name": "Kit 10 potes de vidro",
+          "url": "https://abriuocofre.github.io/oferta/kit-10-potes-de-vidro.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 49,
+          "name": "Maleta com 129 peças",
+          "url": "https://abriuocofre.github.io/oferta/maleta-com-129-pecas.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 50,
+          "name": "Impressora HP Smart Tank",
+          "url": "https://abriuocofre.github.io/oferta/impressora-hp-smart-tank.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 51,
+          "name": "Caneca térmica 350 ml",
+          "url": "https://abriuocofre.github.io/oferta/caneca-termica-350-ml.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 52,
+          "name": "Sabão líquido 5 litros",
+          "url": "https://abriuocofre.github.io/oferta/sabao-liquido-5-litros.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 53,
+          "name": "Kit churrasco",
+          "url": "https://abriuocofre.github.io/oferta/kit-churrasco.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 54,
+          "name": "Kit catraca 46 peças",
+          "url": "https://abriuocofre.github.io/oferta/kit-catraca-46-pecas.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 55,
+          "name": "Garrafa esportiva",
+          "url": "https://abriuocofre.github.io/oferta/garrafa-esportiva.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 56,
+          "name": "Mini compressor de ar",
+          "url": "https://abriuocofre.github.io/oferta/mini-compressor-de-ar.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topo">
+  <div class="dentro">
+    <a class="marca" href="https://abriuocofre.github.io/">
+      <img src="https://abriuocofre.github.io/logo.png" alt="" width="40" height="40">
+      <span class="marca-nome">Abriu o <b>Cofre</b></span>
+    </a>
+  </div>
+</header>
+<div class="dentro">
+<main>
+  <h1>O catálogo inteiro</h1>
+  <p class="resumo">Cada achado tem página própria, com o que é, por que passou no corte e o que conferir antes de comprar. São 56 até agora.</p>
+  <section class="vizinhos">
+    <h2>Amazon · 30</h2>
+    <div class="grade">
+      <a href="https://abriuocofre.github.io/oferta/air-fryer-5-litros.html"><span>Amazon</span><strong>Air fryer 5 litros</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/air-fryer-8-litros.html"><span>Amazon</span><strong>Air fryer 8 litros</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/caixa-de-som-jbl-go-4.html"><span>Amazon</span><strong>Caixa de som JBL Go 4</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/jbl-boombox-3.html"><span>Amazon</span><strong>JBL Boombox 3</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/organizador-colmeia.html"><span>Amazon</span><strong>Organizador colmeia</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/smartwatch-amazfit-active-2.html"><span>Amazon</span><strong>Smartwatch Amazfit Active 2</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/galaxy-watch7-44-mm.html"><span>Amazon</span><strong>Galaxy Watch7 44 mm</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/aspirador-automotivo.html"><span>Amazon</span><strong>Aspirador automotivo</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/jogo-de-lencol-queen.html"><span>Amazon</span><strong>Jogo de lençol Queen</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/cafeteira-mondial.html"><span>Amazon</span><strong>Cafeteira Mondial</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/escova-eletrica-oral-b.html"><span>Amazon</span><strong>Escova elétrica Oral-B</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/oral-b-pro-series-1.html"><span>Amazon</span><strong>Oral-B PRO Series 1</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/carregador-portatil.html"><span>Amazon</span><strong>Carregador portátil</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/liquidificador-1400-w.html"><span>Amazon</span><strong>Liquidificador 1400 W</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/echo-dot-com-alexa.html"><span>Amazon</span><strong>Echo Dot com Alexa</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kindle-11a-geracao.html"><span>Amazon</span><strong>Kindle 11ª geração</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/jogo-de-panelas.html"><span>Amazon</span><strong>Jogo de panelas</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/garrafa-termica-stanley-1-litro.html"><span>Amazon</span><strong>Garrafa térmica Stanley 1 litro</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/filtro-de-linha.html"><span>Amazon</span><strong>Filtro de linha</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/mop-giratorio.html"><span>Amazon</span><strong>Mop giratório</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/camera-wi-fi.html"><span>Amazon</span><strong>Câmera wi-fi</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/repetidor-de-wi-fi.html"><span>Amazon</span><strong>Repetidor de wi-fi</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/protetor-solar-facial.html"><span>Amazon</span><strong>Protetor solar facial</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/sanduicheira-e-grill.html"><span>Amazon</span><strong>Sanduicheira e grill</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/vaporizador-de-roupas.html"><span>Amazon</span><strong>Vaporizador de roupas</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/fone-redmi-buds-4.html"><span>Amazon</span><strong>Fone Redmi Buds 4</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/maleta-com-129-pecas.html"><span>Amazon</span><strong>Maleta com 129 peças</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/caneca-termica-350-ml.html"><span>Amazon</span><strong>Caneca térmica 350 ml</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-churrasco.html"><span>Amazon</span><strong>Kit churrasco</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/garrafa-esportiva.html"><span>Amazon</span><strong>Garrafa esportiva</strong></a>
+    </div>
+  </section>
+  <section class="vizinhos">
+    <h2>Mercado Livre · 26</h2>
+    <div class="grade">
+      <a href="https://abriuocofre.github.io/oferta/creatina-1-kg.html"><span>+500 mil vendidos</span><strong>Creatina 1 kg</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/bicicleta-aro-29.html"><span>+1.000 vendidas</span><strong>Bicicleta aro 29</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/parafusadeira-e-furadeira.html"><span>Mercado Livre</span><strong>Parafusadeira e furadeira</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/lavadora-portatil.html"><span>Mercado Livre</span><strong>Lavadora portátil</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/gel-creme-facial.html"><span>Mercado Livre</span><strong>Gel-creme facial</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/air-fryer-4-litros.html"><span>Mercado Livre</span><strong>Air fryer 4 litros</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-2-cameras-wi-fi.html"><span>+250 mil vendidas</span><strong>Kit 2 câmeras wi-fi</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/calca-jeans-masculina.html"><span>+250 mil vendidas</span><strong>Calça jeans masculina</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-2-travesseiros.html"><span>Mercado Livre</span><strong>Kit 2 travesseiros</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/tenis-kappa-park-2-0.html"><span>Mercado Livre</span><strong>Tênis Kappa Park 2.0</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/garrafa-stanley-473-ml.html"><span>+1.000 vendidas</span><strong>Garrafa Stanley 473 ml</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/faqueiro-24-pecas.html"><span>+250 mil vendidos</span><strong>Faqueiro 24 peças</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-50-cabides.html"><span>+10 mil vendidos</span><strong>Kit 50 cabides</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/hidratante-corporal.html"><span>+1.000 vendidos</span><strong>Hidratante corporal</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/aparador-de-pelos.html"><span>+5 mil vendidos</span><strong>Aparador de pelos</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-3-body-splash.html"><span>+50 mil vendidos</span><strong>Kit 3 body splash</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-wella-nutri-enrich.html"><span>+1.000 vendidos</span><strong>Kit Wella Nutri-Enrich</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/palmilha-de-gel.html"><span>+10 mil vendidas</span><strong>Palmilha de gel</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/microfone-de-lapela.html"><span>+10 mil vendidos</span><strong>Microfone de lapela</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/jaqueta-corta-vento.html"><span>+10 mil vendidas</span><strong>Jaqueta corta-vento</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/varal-de-chao-3-andares.html"><span>+10 mil vendidos</span><strong>Varal de chão 3 andares</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-10-potes-de-vidro.html"><span>Mercado Livre</span><strong>Kit 10 potes de vidro</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/impressora-hp-smart-tank.html"><span>Mercado Livre</span><strong>Impressora HP Smart Tank</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/sabao-liquido-5-litros.html"><span>+250 mil vendidos</span><strong>Sabão líquido 5 litros</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/kit-catraca-46-pecas.html"><span>+250 mil vendidos</span><strong>Kit catraca 46 peças</strong></a>
+      <a href="https://abriuocofre.github.io/oferta/mini-compressor-de-ar.html"><span>+5 mil vendidos</span><strong>Mini compressor de ar</strong></a>
+    </div>
+  </section>
+</main>
+</div>
+<footer class="rodape">
+  <div class="dentro">
+    <p><a href="https://abriuocofre.github.io/">Voltar para todos os achados</a> · <a href="https://abriuocofre.github.io/catalogo.html">Catálogo completo</a> · <a href="https://t.me/abriuocofre" target="_blank" rel="noopener">Canal no Telegram</a></p>
+    <p style="margin-top:.7rem">Abriu o Cofre é participante de programas de afiliados. Como afiliado, o canal recebe uma comissão por compras qualificadas — você paga exatamente o mesmo preço.</p>
+  </div>
+</footer>
+</body>
+</html>

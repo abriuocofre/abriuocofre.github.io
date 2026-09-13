@@ -1,0 +1,7 @@
+# Abriu o Cofre — https://abriuocofre.github.io
+# Pode entrar: o site inteiro é público, inclusive as imagens das peças.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://abriuocofre.github.io/sitemap.xml
