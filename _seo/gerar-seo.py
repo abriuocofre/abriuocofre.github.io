@@ -52,6 +52,14 @@ HOJE = date.today().isoformat()
 
 OG_PADRAO = SITE + "/marca/og-cofre-1200x630.jpg"
 
+
+def absoluto(caminho: str) -> str:
+    """og:image, JSON-LD e sitemap exigem endereco completo; o ofertas.js
+    guarda o caminho relativo (img/ofertas/x.jpg), que serve ao index."""
+    if caminho.startswith(("http://", "https://")):
+        return caminho
+    return SITE + "/" + caminho.lstrip("/")
+
 LOJAS = {
     "amazon": {
         "nome": "Amazon",
@@ -248,8 +256,9 @@ h1{font-family:"Chakra Petch","Segoe UI",sans-serif;font-weight:600;
 .bloco li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;
   border-radius:2px;background:var(--ciano)}
 
-.aviso{margin-top:2.4rem;border-left:3px solid var(--risco-luz);padding-left:1rem;
-  color:var(--tinta-3);font-size:.86rem;max-width:58ch}
+.aviso{margin:1.8rem 0 1.4rem;border-left:3px solid var(--ambar);padding-left:1rem;
+  color:var(--tinta-2);font-size:.88rem;line-height:1.55;max-width:58ch}
+.aviso b{color:var(--ambar)}
 
 .vizinhos{margin-top:2.8rem}
 .vizinhos h2{font-family:"Chakra Petch","Segoe UI",sans-serif;font-size:1rem;
@@ -324,7 +333,7 @@ RODAPE = (
 def pagina_da_oferta(o: dict, vizinhas: list) -> str:
     loja = LOJAS.get(o.get("loja", ""), LOJAS["amazon"])
     url = SITE + "/oferta/" + o["apelido"] + ".html"
-    imagem = o.get("imagem") or OG_PADRAO
+    imagem = absoluto(o.get("imagem") or OG_PADRAO)
     descricao = cortar(o.get("texto") or (o["titulo"] + " — achado garimpado no " + loja["nome"] + "."), 155)
 
     # DADOS ESTRUTURADOS — de proposito SEM bloco de preco/oferta:
@@ -382,8 +391,15 @@ def pagina_da_oferta(o: dict, vizinhas: list) -> str:
                       + esc(loja["de"]) + '.</p>\n')
 
     if o.get("imagem"):
-        partes.append('  <figure class="foto"><img src="' + esc(o["imagem"]) + '" alt="'
+        partes.append('  <figure class="foto"><img src="../' + esc(o["imagem"]) + '" alt="'
                       + esc(o["titulo"]) + '" loading="lazy"></figure>\n')
+
+    # o aviso de publicidade vem IMEDIATAMENTE antes do botao: a Amazon pede o
+    # aviso perto do link, e la no fim da pagina ninguem le antes de clicar.
+    partes.append('  <p class="aviso"><b>#publi</b> · Este é um link de afiliado: se você comprar '
+                  'por ele, o canal recebe uma comissão e você paga o mesmo preço. Preço e '
+                  'disponibilidade mudam a qualquer momento — o que vale é o que estiver na '
+                  'página da loja.</p>\n')
 
     partes.append('  <p><a class="ir" href="' + esc(o["link"]) + '" target="_blank" '
                   'rel="sponsored nofollow noopener">' + esc(loja["botao"]) + ' →</a></p>\n')
@@ -392,10 +408,6 @@ def pagina_da_oferta(o: dict, vizinhas: list) -> str:
     for linha in loja["conferir"]:
         partes.append('      <li>' + esc(linha) + '</li>\n')
     partes.append('    </ul>\n  </section>\n')
-
-    partes.append('  <p class="aviso">#publi · Este é um link de afiliado: se você comprar por ele, '
-                  'o canal recebe uma comissão e você paga o mesmo preço. Preço e disponibilidade '
-                  'mudam a qualquer momento — o que vale é o que estiver na página da loja.</p>\n')
 
     if vizinhas:
         partes.append('  <section class="vizinhos">\n    <h2>Outros achados do cofre</h2>\n'
@@ -486,7 +498,7 @@ def gerar_sitemap(ofertas: list) -> str:
     linhas += url(SITE + "/catalogo.html", "0.9")
     linhas += url(SITE + "/cartoes.html", "0.6")
     for o in ofertas:
-        imgs = [o["imagem"]] if o.get("imagem") else []
+        imgs = [absoluto(o["imagem"])] if o.get("imagem") else []
         linhas += url(SITE + "/oferta/" + o["apelido"] + ".html", "0.8", imgs)
     linhas.append('</urlset>')
     return "\n".join(linhas) + "\n"

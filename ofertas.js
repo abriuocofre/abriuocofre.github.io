@@ -159,7 +159,7 @@ const OFERTAS = [
     texto:  "Sai da máquina e vai para a cama sem passar ferro.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-09-lencol-queen.jpg",
     link:   "https://www.amazon.com.br/dp/B0CGJN34ZH?tag=abriuocofre-20"
   },
   {
@@ -168,7 +168,7 @@ const OFERTAS = [
     texto:  "Duas câmeras num kit só, e o mesmo aplicativo cuida das duas.",
     preco:  "",
     selo:   "+250 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-09-cameras-icsee.jpg",
     link:   "https://meli.la/23gmfeW"
   },
   {
@@ -177,7 +177,7 @@ const OFERTAS = [
     texto:  "Confira a tomada da sua casa antes de comprar.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-10-cafeteira-mondial.jpg",
     link:   "https://www.amazon.com.br/dp/B08HZJCDRQ?tag=abriuocofre-20"
   },
   {
@@ -186,7 +186,7 @@ const OFERTAS = [
     texto:  "O elastano é o que deixa sentar e agachar sem repuxar.",
     preco:  "",
     selo:   "+250 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-10-calca-jeans.jpg",
     link:   "https://meli.la/2fxksPj"
   },
   {
@@ -195,7 +195,7 @@ const OFERTAS = [
     texto:  "O sensor de pressão poupa a gengiva de quem escova com força.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-11-oralb-pro3.jpg",
     link:   "https://www.amazon.com.br/dp/B08PFSYF9R?tag=abriuocofre-20"
   },
   {
@@ -204,7 +204,7 @@ const OFERTAS = [
     texto:  "Vêm dois: dá para trocar os da cama de casal de uma vez só.",
     preco:  "",
     selo:   "+100 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-11-travesseiros.jpg",
     link:   "https://meli.la/1sqcdM7"
   },
   {
@@ -213,7 +213,7 @@ const OFERTAS = [
     texto:  "Temporizador de 2 minutos para não escovar com pressa.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-12-oralb-pro1.jpg",
     link:   "https://www.amazon.com.br/dp/B07FFJ2T6T?tag=abriuocofre-20"
   },
   {
@@ -222,7 +222,7 @@ const OFERTAS = [
     texto:  "Tênis de marca, com etiqueta de original, para andar o dia inteiro.",
     preco:  "",
     selo:   "+100 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-12-tenis-kappa.jpg",
     link:   "https://meli.la/2nBmood"
   },
   {
@@ -231,7 +231,7 @@ const OFERTAS = [
     texto:  "Viagem, apagão e dia longo fora deixam de ser problema.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-13-powerbank-i2go.jpg",
     link:   "https://www.amazon.com.br/dp/B094YR4SLJ?tag=abriuocofre-20"
   },
   {
@@ -240,7 +240,7 @@ const OFERTAS = [
     texto:  "A Stanley na versão leve: cabe no suporte do carro e na mochila.",
     preco:  "",
     selo:   "+1.000 vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-13-stanley-473.jpg",
     link:   "https://meli.la/2arixzz"
   },
   {
@@ -249,7 +249,7 @@ const OFERTAS = [
     texto:  "Vitamina, massa de bolo e até gelo sem travar no meio.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-14-liquidificador-walita.jpg",
     link:   "https://www.amazon.com.br/dp/B08TLH52PQ?tag=abriuocofre-20"
   },
   {
@@ -258,7 +258,7 @@ const OFERTAS = [
     texto:  "Serviço completo para seis pessoas, de uma marca que todo mundo conhece.",
     preco:  "",
     selo:   "+250 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-14-faqueiro-tramontina.jpg",
     link:   "https://meli.la/1CnLq76"
   },
   {
@@ -267,7 +267,7 @@ const OFERTAS = [
     texto:  "Toca música, dá a previsão do tempo e acende a luz.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-15-echo-dot.jpg",
     link:   "https://www.amazon.com.br/dp/B09B8VGCR8?tag=abriuocofre-20"
   },
   {
@@ -276,7 +276,7 @@ const OFERTAS = [
     texto:  "Lê no sol, na cama e no ônibus sem cansar a vista.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-16-kindle-11.jpg",
     link:   "https://www.amazon.com.br/dp/B09SWTG9GF?tag=abriuocofre-20"
   },
   {
@@ -285,7 +285,7 @@ const OFERTAS = [
     texto:  "O veludo segura a alça, e o perfil fino abre espaço no guarda-roupa.",
     preco:  "",
     selo:   "+10 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-16-cabides-veludo.jpg",
     link:   "https://meli.la/139EXgo"
   },
   {
@@ -294,7 +294,7 @@ const OFERTAS = [
     texto:  "Ovo que não gruda e panela que lava com uma passada.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-17-panelas-tramontina.jpg",
     link:   "https://www.amazon.com.br/dp/B086YK7M5Y?tag=abriuocofre-20"
   },
   {
@@ -303,7 +303,7 @@ const OFERTAS = [
     texto:  "Loção de farmácia, em frasco que cabe na bolsa.",
     preco:  "",
     selo:   "+1.000 vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-17-hidratante-mantecorp.jpg",
     link:   "https://meli.la/1BNaseo"
   },
   {
@@ -312,7 +312,7 @@ const OFERTAS = [
     texto:  "Café quente de manhã, água gelada à tarde, na mesma garrafa.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-18-stanley-1l.jpg",
     link:   "https://www.amazon.com.br/dp/B0CGY1H894?tag=abriuocofre-20"
   },
   {
@@ -321,7 +321,7 @@ const OFERTAS = [
     texto:  "Protege a TV e o computador do solavanco de energia.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-19-filtro-intelbras.jpg",
     link:   "https://www.amazon.com.br/dp/B09BDF296F?tag=abriuocofre-20"
   },
   {
@@ -330,7 +330,7 @@ const OFERTAS = [
     texto:  "Dez acessórios num aparelho só, e liga em 110 ou em 220.",
     preco:  "",
     selo:   "+5 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-19-aparador-mondial.jpg",
     link:   "https://meli.la/1fe9Bvx"
   },
   {
@@ -339,7 +339,7 @@ const OFERTAS = [
     texto:  "Piso limpo sem se abaixar e sem esfregão pingando pela casa.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-20-mop-giratorio.jpg",
     link:   "https://www.amazon.com.br/dp/B08DJ8WBSD?tag=abriuocofre-20"
   },
   {
@@ -348,7 +348,7 @@ const OFERTAS = [
     texto:  "Três fragrâncias para revezar na semana, em frasco grande.",
     preco:  "",
     selo:   "+50 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-20-body-splash.jpg",
     link:   "https://meli.la/2Ud9WSd"
   },
   {
@@ -357,7 +357,7 @@ const OFERTAS = [
     texto:  "Você vê a casa pelo celular de onde estiver.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-21-camera-intelbras.jpg",
     link:   "https://www.amazon.com.br/dp/B09Q3K4YLS?tag=abriuocofre-20"
   },
   {
@@ -366,7 +366,7 @@ const OFERTAS = [
     texto:  "A dupla completa, que é como o próprio fabricante manda usar.",
     preco:  "",
     selo:   "+1.000 vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-21-wella-invigo.jpg",
     link:   "https://meli.la/1nrN1QM"
   },
   {
@@ -375,7 +375,7 @@ const OFERTAS = [
     texto:  "O quarto do fundo onde o vídeo trava tem conserto barato.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-22-repetidor-tplink.jpg",
     link:   "https://www.amazon.com.br/dp/B0755PV4H7?tag=abriuocofre-20"
   },
   {
@@ -384,7 +384,7 @@ const OFERTAS = [
     texto:  "Recorta no número do seu pé e passa de um sapato para o outro.",
     preco:  "",
     selo:   "+10 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-22-palmilha-gel.jpg",
     link:   "https://meli.la/1zeawqm"
   },
   {
@@ -393,7 +393,7 @@ const OFERTAS = [
     texto:  "Protege dos raios e ainda segura o brilho durante o dia.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-23-protetor-nivea.jpg",
     link:   "https://www.amazon.com.br/dp/B0BD6755LC?tag=abriuocofre-20"
   },
   {
@@ -402,7 +402,7 @@ const OFERTAS = [
     texto:  "Prende na camisa e o celular grava sua voz longe do barulho da rua.",
     preco:  "",
     selo:   "+10 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-23-microfone-lapela.jpg",
     link:   "https://meli.la/1ejFAvb"
   },
   {
@@ -411,7 +411,7 @@ const OFERTAS = [
     texto:  "Misto quente na ida e bife grelhado na volta.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-24-sanduicheira-britania.jpg",
     link:   "https://www.amazon.com.br/dp/B09WWY48B7?tag=abriuocofre-20"
   },
   {
@@ -420,7 +420,7 @@ const OFERTAS = [
     texto:  "Leve o bastante para viver enrolada dentro da bolsa.",
     preco:  "",
     selo:   "+10 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-24-jaqueta-cortavento.jpg",
     link:   "https://meli.la/1a4Dr8g"
   },
   {
@@ -429,7 +429,7 @@ const OFERTAS = [
     texto:  "Tira o vinco na hora, sem montar tábua de passar.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-25-vaporizador-roupas.jpg",
     link:   "https://www.amazon.com.br/dp/B08B6DLFYD?tag=abriuocofre-20"
   },
   {
@@ -438,7 +438,7 @@ const OFERTAS = [
     texto:  "Dobra e encosta na parede quando a roupa termina de secar.",
     preco:  "",
     selo:   "+10 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-25-varal-chao.jpg",
     link:   "https://meli.la/2R9JMLQ"
   },
   {
@@ -447,7 +447,7 @@ const OFERTAS = [
     texto:  "Corta o barulho do ônibus e passa de 30 horas com o estojo.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-26-redmi-buds4.jpg",
     link:   "https://www.amazon.com.br/dp/B0B3XFRF6X?tag=abriuocofre-20"
   },
   {
@@ -456,7 +456,7 @@ const OFERTAS = [
     texto:  "Vidro não guarda cheiro nem mancha com molho de tomate.",
     preco:  "",
     selo:   "+100 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-26-potes-vidro.jpg",
     link:   "https://meli.la/2tETpmw"
   },
   {
@@ -465,7 +465,7 @@ const OFERTAS = [
     texto:  "O básico do conserto de casa, tudo no mesmo lugar.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-27-maleta-sparta.jpg",
     link:   "https://www.amazon.com.br/dp/B076N2S8FV?tag=abriuocofre-20"
   },
   {
@@ -474,7 +474,7 @@ const OFERTAS = [
     texto:  "Tanque de tinta: enche o reservatório em vez de trocar cartucho.",
     preco:  "",
     selo:   "+100 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-27-impressora-hp.jpg",
     link:   "https://meli.la/2jZTUMM"
   },
   {
@@ -483,7 +483,7 @@ const OFERTAS = [
     texto:  "Café quente até a última xícara, mesmo bebendo devagar.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-28-caneca-lumai.jpg",
     link:   "https://www.amazon.com.br/dp/B0CT61XYBM?tag=abriuocofre-20"
   },
   {
@@ -492,7 +492,7 @@ const OFERTAS = [
     texto:  "Galão de cinco litros: é a compra que demora a acabar.",
     preco:  "",
     selo:   "+250 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-28-sabao-omo.jpg",
     link:   "https://meli.la/1hGj198"
   },
   {
@@ -501,7 +501,7 @@ const OFERTAS = [
     texto:  "O clássico do fim de semana, em três peças.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-29-churrasco-tramontina.jpg",
     link:   "https://www.amazon.com.br/dp/B07GS3MLJX?tag=abriuocofre-20"
   },
   {
@@ -510,7 +510,7 @@ const OFERTAS = [
     texto:  "Quarenta e seis peças na maleta, cada uma no seu lugar.",
     preco:  "",
     selo:   "+250 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-29-catraca-46.jpg",
     link:   "https://meli.la/1Dcc3by"
   },
   {
@@ -519,7 +519,7 @@ const OFERTAS = [
     texto:  "Água gelada o dia inteiro, sem peso na mochila.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-30-garrafa-modus.jpg",
     link:   "https://www.amazon.com.br/dp/B0CY44C3Y4?tag=abriuocofre-20"
   },
   {
@@ -528,7 +528,7 @@ const OFERTAS = [
     texto:  "Calibra o pneu no estacionamento, sem depender do posto.",
     preco:  "",
     selo:   "+5 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-30-compressor-ar.jpg",
     link:   "https://meli.la/2Ddo8KM"
   },
 

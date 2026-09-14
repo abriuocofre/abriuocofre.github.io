@@ -237,6 +237,9 @@ h2{
   display:grid; place-items:center; overflow:hidden;
 }
 .card-foto img{ width:100%; height:100%; object-fit:contain; padding:.9rem; }
+/* a foto do produto ja sai da fabrica no mesmo 4/3 do slot, com o fundo
+   escuro dela propria: com padding sobraria uma moldura azul em volta */
+.card-foto img:not(.vazio){ padding:0; object-fit:cover; }
 /* sem foto do produto, o cofre entra como marca d'água — discreta, para não
    virar o assunto do card nem competir com três cofres iguais em fila */
 .card-foto .vazio{ opacity:.11; width:38%; height:auto; }
