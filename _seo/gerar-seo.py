@@ -24,8 +24,9 @@ REGRAS QUE ESTE SCRIPT NAO PODE QUEBRAR
    fora da Amazon. So oferta de loja != "amazon" pode mostrar preco.
 2. Todo link de afiliado sai com rel="sponsored nofollow noopener" e target=_blank.
 3. Todo endereco publico sai pelo dominio da MARCA (abriuocofre.github.io).
-   O dominio antigo (arimardiego-afk.github.io) carrega o nome pessoal e nao
-   entra em lugar nenhum.
+   O dominio ANTIGO do site carrega o nome pessoal do dono e por isso nao
+   entra em lugar nenhum — nem como exemplo, nem dentro de um comentario.
+   Quem e' esse endereco esta' anotado so no registro interno do projeto.
 4. O script NAO apaga nada. Pagina de oferta que saiu do ofertas.js e' apenas
    LISTADA no fim, para decisao humana.
 
