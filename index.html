@@ -563,6 +563,15 @@ h2{
   var alvo = document.getElementById("lista-ofertas");
   var lista = (typeof OFERTAS !== "undefined" && OFERTAS) ? OFERTAS : [];
 
+  /* Quem ainda não tem ilustração cai para o fim da vitrine: sem isto, a
+     página abre com 14 cards de marca d'água e a primeira impressão é a de
+     um catálogo vazio. A ordenação é ESTÁVEL e vale só na exibição — a
+     ordem dentro do ofertas.js não se mexe, porque é ela que casa a
+     ilustração azf-NN com a oferta (ver _seo/preparar-imagens.py). */
+  lista = lista.slice().sort(function (a, b) {
+    return (b.imagem ? 1 : 0) - (a.imagem ? 1 : 0);
+  });
+
   if (!lista.length) {
     alvo.className = "";
     alvo.innerHTML =
