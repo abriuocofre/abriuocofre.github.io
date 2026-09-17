@@ -33,7 +33,7 @@ const OFERTAS = [
     texto:  "Fritura crocante sem óleo e sem a sujeira da panela.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-01-airfryer-5l.jpg",
     link:   "https://www.amazon.com.br/dp/B08HZBX16R?tag=abriuocofre-20"
   },
   {
@@ -42,7 +42,7 @@ const OFERTAS = [
     texto:  "Pote grande sai bem mais em conta por dose do que os de 300 g.",
     preco:  "",
     selo:   "+500 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-01-creatina.jpg",
     link:   "https://meli.la/1dcn6E4"
   },
   {
@@ -51,7 +51,7 @@ const OFERTAS = [
     texto:  "Quem cozinha para muita gente não frita em duas levas.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-02-airfryer-8l.jpg",
     link:   "https://www.amazon.com.br/dp/B0BJFJGW4B?tag=abriuocofre-20"
   },
   {
@@ -60,7 +60,7 @@ const OFERTAS = [
     texto:  "Som de bolso que não morre com respingo de piscina.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-03-caixa-som-portatil.jpg",
     link:   "https://www.amazon.com.br/dp/B0CX5C6WP3?tag=abriuocofre-20"
   },
   {
@@ -69,7 +69,7 @@ const OFERTAS = [
     texto:  "Alumínio não enferruja na chuva, e o freio a disco segura no molhado.",
     preco:  "",
     selo:   "+1.000 vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-03-bicicleta-aro29.jpg",
     link:   "https://meli.la/2qt9Z7Z"
   },
   {
@@ -78,7 +78,7 @@ const OFERTAS = [
     texto:  "Para churrasco, praia e quintal, longe de tomada.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-04-caixa-som-grande.jpg",
     link:   "https://www.amazon.com.br/dp/B0BF66H9XW?tag=abriuocofre-20"
   },
   {
@@ -87,7 +87,7 @@ const OFERTAS = [
     texto:  "Duas baterias: uma trabalha enquanto a outra carrega.",
     preco:  "",
     selo:   "+100 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-04-parafusadeira.jpg",
     link:   "https://meli.la/2ifkSsj"
   },
   {
@@ -96,7 +96,7 @@ const OFERTAS = [
     texto:  "Meia, calcinha e cueca cada uma no seu quadradinho.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-05-organizador-colmeia.jpg",
     link:   "https://www.amazon.com.br/dp/B078J855LF?tag=abriuocofre-20"
   },
   {
@@ -105,7 +105,7 @@ const OFERTAS = [
     texto:  "Sem tomada e sem mangueira presa: ela puxa a água de um balde.",
     preco:  "",
     selo:   "+100 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-05-lava-jato.jpg",
     link:   "https://meli.la/2cGUqFq"
   },
   {
@@ -114,7 +114,7 @@ const OFERTAS = [
     texto:  "Passos, sono e batimentos no pulso, sem pegar o celular.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-06-smartwatch-esportivo.jpg",
     link:   "https://www.amazon.com.br/dp/B0F9PDYH3M?tag=abriuocofre-20"
   },
   {
@@ -123,7 +123,7 @@ const OFERTAS = [
     texto:  "Acompanha treino e sono e avisa das mensagens no pulso.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-07-smartwatch-aco.jpg",
     link:   "https://www.amazon.com.br/dp/B0D96V7WRB?tag=abriuocofre-20"
   },
   {
@@ -132,7 +132,7 @@ const OFERTAS = [
     texto:  "Textura em gel: seca rápido e não deixa o rosto pegajoso.",
     preco:  "",
     selo:   "+100 mil vendidos",
-    imagem: "",
+    imagem: "img/ofertas/mlf-07-gel-facial-garnier.jpg",
     link:   "https://meli.la/22zbnt4"
   },
   {
@@ -141,7 +141,7 @@ const OFERTAS = [
     texto:  "Areia do tapete e migalha do banco saem sem tomada.",
     preco:  "",
     selo:   "passou no corte do cofre",
-    imagem: "",
+    imagem: "img/ofertas/azf-08-aspirador-automotivo.jpg",
     link:   "https://www.amazon.com.br/dp/B07TM6SVL7?tag=abriuocofre-20"
   },
   {
@@ -150,7 +150,7 @@ const OFERTAS = [
     texto:  "Quatro litros dão conta do jantar de uma família pequena.",
     preco:  "",
     selo:   "+100 mil vendidas",
-    imagem: "",
+    imagem: "img/ofertas/mlf-08-airfryer-mondial.jpg",
     link:   "https://meli.la/1ozgPPG"
   },
   {

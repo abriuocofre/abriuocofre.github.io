@@ -3,397 +3,411 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://abriuocofre.github.io/</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://abriuocofre.github.io/marca/og-cofre-1200x630.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/catalogo.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/cartoes.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/air-fryer-5-litros.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-01-airfryer-5l.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/creatina-1-kg.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-01-creatina.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/air-fryer-8-litros.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-02-airfryer-8l.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/caixa-de-som-jbl-go-4.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-03-caixa-som-portatil.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/bicicleta-aro-29.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-03-bicicleta-aro29.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/jbl-boombox-3.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-04-caixa-som-grande.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/parafusadeira-e-furadeira.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-04-parafusadeira.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/organizador-colmeia.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-05-organizador-colmeia.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/lavadora-portatil.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-05-lava-jato.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/smartwatch-amazfit-active-2.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-06-smartwatch-esportivo.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/galaxy-watch7-44-mm.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-07-smartwatch-aco.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/gel-creme-facial.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-07-gel-facial-garnier.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/aspirador-automotivo.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-08-aspirador-automotivo.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/air-fryer-4-litros.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-08-airfryer-mondial.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/jogo-de-lencol-queen.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-09-lencol-queen.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-2-cameras-wi-fi.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-09-cameras-icsee.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/cafeteira-mondial.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-10-cafeteira-mondial.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/calca-jeans-masculina.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-10-calca-jeans.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/escova-eletrica-oral-b.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-11-oralb-pro3.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-2-travesseiros.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-11-travesseiros.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/oral-b-pro-series-1.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-12-oralb-pro1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/tenis-kappa-park-2-0.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-12-tenis-kappa.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/carregador-portatil.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-13-powerbank-i2go.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/garrafa-stanley-473-ml.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-13-stanley-473.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/liquidificador-1400-w.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-14-liquidificador-walita.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/faqueiro-24-pecas.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-14-faqueiro-tramontina.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/echo-dot-com-alexa.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-15-echo-dot.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kindle-11a-geracao.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-16-kindle-11.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-50-cabides.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-16-cabides-veludo.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/jogo-de-panelas.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-17-panelas-tramontina.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/hidratante-corporal.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-17-hidratante-mantecorp.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/garrafa-termica-stanley-1-litro.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-18-stanley-1l.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/filtro-de-linha.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-19-filtro-intelbras.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/aparador-de-pelos.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-19-aparador-mondial.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/mop-giratorio.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-20-mop-giratorio.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-3-body-splash.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-20-body-splash.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/camera-wi-fi.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-21-camera-intelbras.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-wella-nutri-enrich.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-21-wella-invigo.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/repetidor-de-wi-fi.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-22-repetidor-tplink.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/palmilha-de-gel.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-22-palmilha-gel.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/protetor-solar-facial.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-23-protetor-nivea.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/microfone-de-lapela.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-23-microfone-lapela.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/sanduicheira-e-grill.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-24-sanduicheira-britania.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/jaqueta-corta-vento.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-24-jaqueta-cortavento.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/vaporizador-de-roupas.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-25-vaporizador-roupas.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/varal-de-chao-3-andares.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-25-varal-chao.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/fone-redmi-buds-4.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-26-redmi-buds4.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-10-potes-de-vidro.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-26-potes-vidro.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/maleta-com-129-pecas.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-27-maleta-sparta.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/impressora-hp-smart-tank.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-27-impressora-hp.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/caneca-termica-350-ml.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-28-caneca-lumai.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/sabao-liquido-5-litros.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-28-sabao-omo.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-churrasco.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-29-churrasco-tramontina.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/kit-catraca-46-pecas.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-29-catraca-46.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/garrafa-esportiva.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/azf-30-garrafa-modus.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://abriuocofre.github.io/oferta/mini-compressor-de-ar.html</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://abriuocofre.github.io/img/ofertas/mlf-30-compressor-ar.jpg</image:loc></image:image>

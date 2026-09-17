@@ -52,11 +52,57 @@ MAPA_ML = {
 }
 
 
+# Um bloco de oferta inteiro, de "{ loja:" ate o "link:". O campo "imagem:"
+# mora DENTRO desse trecho -- e por isso que o mesmo padrao serve para LER a
+# oferta e para ESCREVER a foto de volta nela, sem tocar em mais nada.
+PADRAO_BLOCO = re.compile(
+    r"\{\s*loja:\s*\"(.*?)\",\s*titulo:\s*\"(.*?)\",.*?link:\s*\"(.*?)\"", re.S)
+
+
 def ler_ofertas():
     src = open(OFERTAS, encoding="utf-8").read()
-    return re.findall(
-        r"\{\s*loja:\s*\"(.*?)\",\s*titulo:\s*\"(.*?)\",.*?link:\s*\"(.*?)\"",
-        src, re.S)
+    return PADRAO_BLOCO.findall(src)
+
+
+def escrever_no_ofertas(feitos):
+    """Grava o campo `imagem:` de cada bloco do ofertas.js.
+
+    Era o unico elo feito a mao da esteira: o script sempre soube qual foto
+    pertence a qual oferta (e o `feitos`), mas quem escrevia o caminho no
+    ofertas.js era o Arimar. Resultado medido em 16/09/2026: as 14 ofertas
+    novas ficaram com `imagem: ""` e SUMIRAM do gerador de pins (42 de 56).
+
+    O que ele NAO faz, de proposito:
+      - nao apaga nada e nao mexe em outro campo -- so troca o que esta entre
+        as aspas do `imagem:` daquele bloco;
+      - nao inventa bloco nem muda a ordem;
+      - nao pisa em caminho ja escrito e igual (conta so o que mudou).
+    """
+    with open(OFERTAS, encoding="utf-8", newline="") as f:
+        src = f.read()
+    blocos = list(PADRAO_BLOCO.finditer(src))
+    trocas = []
+    # De tras para frente: mexer no fim nao desloca o inicio do bloco anterior.
+    for i in sorted(feitos, reverse=True):
+        if i >= len(blocos):
+            continue
+        bloco = blocos[i]
+        texto = bloco.group(0)
+        novo, n = re.subn(r"(imagem:\s*\")[^\"]*(\")",
+                          lambda m: m.group(1) + feitos[i] + m.group(2),
+                          texto, count=1)
+        if n and novo != texto:
+            src = src[:bloco.start()] + novo + src[bloco.end():]
+            trocas.append((i, bloco.group(2), feitos[i]))
+    if not trocas:
+        print("\nofertas.js: nada a escrever, os %d caminhos ja estavam la"
+              % len(feitos))
+        return
+    with open(OFERTAS, "w", encoding="utf-8", newline="") as f:
+        f.write(src)
+    print("\nofertas.js: %d campo(s) `imagem:` preenchido(s)" % len(trocas))
+    for i, titulo, caminho in sorted(trocas):
+        print("  %2d  %-34s <- %s" % (i + 1, titulo[:34], caminho))
 
 
 def caixa_do_produto(im, limiar=28):
@@ -126,6 +172,8 @@ def main():
     json.dump({str(k): v for k, v in feitos.items()},
               open(mapa, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("\nmapa: " + mapa)
+
+    escrever_no_ofertas(feitos)
 
 
 if __name__ == "__main__":
