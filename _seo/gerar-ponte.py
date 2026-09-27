@@ -8,8 +8,14 @@ loja, sai a foto da loja. Apontando para esta pagina, sai a arte do molde, que
 esta' no og:image. A pagina tem o botao que leva a loja pelo link de afiliado.
 
 Le _seo/ponte.json e escreve:
-    img/ponte/<apelido>.jpg   a arte do molde (copiada de artes-instagram)
-    p/<apelido>.html          a pagina
+    img/ponte/<apelido>.jpg     a arte do molde (copiada de artes-instagram)
+    img/ponte/<apelido>-og.jpg  a mesma arte num QUADRADO, para o og:image
+    p/<apelido>.html            a pagina
+
+Por que o quadrado (27/09/2026, medido): no post de link, a Meta corta a
+imagem em quadrado pelo centro. A arte 4:5 perdia o topo (a marca) e o rodape
+(@abriuocofre). O quadrado leva a arte inteira no meio e, nas laterais, ela
+mesma desfocada e escurecida.
 
 Como rodar (da pasta site-ofertas):
     python -X utf8 _seo/gerar-ponte.py
@@ -139,7 +145,7 @@ def conferir(p: dict) -> None:
 def pagina(p: dict) -> str:
     loja = LOJAS[p["loja"]]
     url = f"{SITE}/p/{p['apelido']}.html"
-    img = f"{SITE}/img/ponte/{p['apelido']}.jpg"
+    img = f"{SITE}/img/ponte/{p['apelido']}-og.jpg"
     t = escape(p["titulo"])
     r = escape(p["resumo"])
     link = escape(p["link"], quote=True)
@@ -161,7 +167,7 @@ def pagina(p: dict) -> str:
 <meta property="og:description" content="{r}">
 <meta property="og:image" content="{img}">
 <meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1350">
+<meta property="og:image:height" content="1080">
 <meta property="og:image:alt" content="{t}">
 <meta property="og:url" content="{url}">
 <meta property="og:site_name" content="Abriu o Cofre">
@@ -213,6 +219,18 @@ def pagina(p: dict) -> str:
 """
 
 
+def quadrado(arte: Path, saida: Path, lado: int = 1080) -> None:
+    """A arte inteira no meio de um quadrado; as laterais sao ela desfocada."""
+    from PIL import Image, ImageEnhance, ImageFilter
+    im = Image.open(arte).convert("RGB")
+    alta = round(lado * im.height / im.width)
+    fundo = im.resize((lado, alta)).crop((0, (alta - lado) // 2, lado, (alta - lado) // 2 + lado))
+    fundo = ImageEnhance.Brightness(fundo.filter(ImageFilter.GaussianBlur(40))).enhance(0.45)
+    larg = round(im.width * lado / im.height)
+    fundo.paste(im.resize((larg, lado), Image.LANCZOS), ((lado - larg) // 2, 0))
+    fundo.save(saida, quality=88, optimize=True)
+
+
 def main() -> int:
     itens = json.loads((RAIZ / "_seo" / "ponte.json").read_bytes().decode("utf-8"))
     for p in itens:
@@ -224,6 +242,7 @@ def main() -> int:
         destino = RAIZ / "img" / "ponte" / f"{p['apelido']}.jpg"
         destino.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(origem, destino)
+        quadrado(destino, destino.with_name(f"{p['apelido']}-og.jpg"))
         html = RAIZ / "p" / f"{p['apelido']}.html"
         html.parent.mkdir(parents=True, exist_ok=True)
         html.write_bytes(pagina(p).encode("utf-8"))
