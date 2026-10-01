@@ -197,7 +197,7 @@ FONTES = (
 )
 
 ESTILO = """<style>
-:root{
+:root{color-scheme:dark;
   --breu:#0A0D12; --aco:#111823; --aco-alto:#16202D;
   --risco:#22303F; --risco-luz:#2E4055;
   --ciano:#22D3EE; --ambar:#F59E0B; --ambar-op:rgba(245,158,11,.13);

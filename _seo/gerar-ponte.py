@@ -78,7 +78,7 @@ PROIBIDO = [
     (r"(?i)\bnota\b|avalia", "nota ou avaliacao"),
 ]
 
-CSS = """:root{
+CSS = """:root{color-scheme:dark;
   --breu:#0A0D12; --aco:#111823; --risco:#22303F;
   --ciano:#22D3EE; --ambar:#F59E0B; --ambar-op:rgba(245,158,11,.13);
   --tinta:#E8EFF7; --tinta-2:#A3B4C6; --tinta-3:#6D8096;
