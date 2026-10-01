@@ -72,6 +72,8 @@ LOJAS = {
     },
 }
 
+TOPO = "Ver na loja"      # botao grande do topo (D1, 01/10/2026)
+
 PROIBIDO = [
     (r"(?i)magalu|magazine\s*luiza|\blu\b", "nome da loja Magalu (contrato 11.6)"),
     (r"R\$|\d+,\d{2}\b", "preco"),
@@ -110,6 +112,11 @@ h1{font-family:"Chakra Petch","Segoe UI",sans-serif;font-weight:600;
   margin-top:1.4rem;padding:1rem 1.6rem;border-radius:999px;background:var(--ambar);
   color:#1A1206;font-weight:600;text-decoration:none;font-size:1.05rem}
 .ir:hover{filter:brightness(1.06)}
+.ir-topo{display:flex;width:100%;margin-top:0;padding:1.15rem 1.4rem;font-size:1.25rem;
+  font-weight:700;letter-spacing:.01em;box-shadow:0 6px 24px rgba(245,158,11,.22)}
+.ir-nota{margin-top:.55rem;text-align:center;color:var(--tinta-3);font-size:.78rem}
+.ir-nota b{color:var(--ambar);font-weight:600}
+.loja-tag.depois{margin-top:1.6rem}
 .foto{margin-top:1.6rem;max-width:480px;border:1px solid var(--risco);
   border-radius:var(--raio);overflow:hidden;background:var(--aco)}
 .foto a{display:block}
@@ -149,6 +156,11 @@ def pagina(p: dict) -> str:
     t = escape(p["titulo"])
     r = escape(p["resumo"])
     link = escape(p["link"], quote=True)
+    # D1 (decisao dele, 01/10/2026): botao grande "Ver na loja" no TOPO. So'
+    # botao que a pessoa clica; nada de redirecionar sozinho (regra 1 acima).
+    # O texto e' o mesmo para toda loja: nao nomeia a Magalu e nao fala preco.
+    topo = (f'<a class="ir ir-topo" href="{link}" target="_blank" '
+            f'rel="sponsored nofollow noopener">{escape(TOPO)} →</a>')
     ir = (f'<a class="ir" href="{link}" target="_blank" rel="sponsored nofollow noopener">'
           f'{escape(loja["botao"])} →</a>')
     conf = "\n".join(f"      <li>{escape(c)}</li>" for c in loja["conferir"])
@@ -193,11 +205,12 @@ def pagina(p: dict) -> str:
 </header>
 <div class="dentro">
 <main>
-  <span class="loja-tag">{escape(loja["tag"])}</span>
+  <p>{topo}</p>
+  <p class="ir-nota"><b>#publi</b> · link de afiliado — você paga o mesmo preço</p>
+  <span class="loja-tag depois">{escape(loja["tag"])}</span>
   <h1>{t}</h1>
   <p><span class="selo">{escape(p.get("selo", ""))}</span></p>
   <p class="resumo">{r}</p>
-  <p>{ir}</p>
   <figure class="foto"><a href="{link}" target="_blank" rel="sponsored nofollow noopener"><img src="../img/ponte/{p['apelido']}.jpg" alt="{t}" width="1080" height="1350"></a></figure>
   <p class="aviso"><b>#publi</b> · Este é um link de afiliado: se você comprar por ele, o canal recebe uma comissão e você paga o mesmo preço. Preço e estoque mudam a qualquer momento — o que vale é o que estiver na página da loja.</p>
   <section class="bloco">
@@ -206,6 +219,7 @@ def pagina(p: dict) -> str:
 {conf}
     </ul>
   </section>
+  <p>{ir}</p>
 </main>
 </div>
 <footer class="rodape">
@@ -245,7 +259,11 @@ def main() -> int:
         quadrado(destino, destino.with_name(f"{p['apelido']}-og.jpg"))
         html = RAIZ / "p" / f"{p['apelido']}.html"
         html.parent.mkdir(parents=True, exist_ok=True)
-        html.write_bytes(pagina(p).encode("utf-8"))
+        texto = pagina(p)
+        # Trava da regra 1: nenhuma forma de pular sozinho para a loja.
+        if re.search(r"(?i)http-equiv\s*=\s*\"?refresh|location\s*[.=]|<script", texto):
+            sys.exit(f"RECUSADO ({p['apelido']}): a pagina redirecionaria sozinha.")
+        html.write_bytes(texto.encode("utf-8"))
         print(f"ok  p/{p['apelido']}.html")
     return 0
 
