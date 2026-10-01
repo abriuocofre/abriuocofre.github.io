@@ -225,7 +225,7 @@ def pagina(p: dict) -> str:
 <footer class="rodape">
   <div class="dentro">
     <p><a href="{SITE}/">Todos os achados</a> · <a href="https://t.me/abriuocofre" target="_blank" rel="noopener">Canal no Telegram</a> · <a href="https://www.instagram.com/abriuocofre/" target="_blank" rel="noopener">Instagram</a></p>
-    <p style="margin-top:.7rem">Abriu o Cofre é participante de programas de afiliados. Como afiliado, o canal recebe uma comissão por compras qualificadas — você paga exatamente o mesmo preço.</p>
+    <p style="margin-top:.7rem">Abriu o Cofre é participante de programas de afiliados. Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. Nas demais lojas, o canal também recebe comissão — você paga exatamente o mesmo preço.</p>
   </div>
 </footer>
 </body>
