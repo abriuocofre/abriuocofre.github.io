@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "achados-da-casa",
+    "titulo": "🔓 Abriu o Cofre — achados da casa",
+    "descricao": "Ofertas conferidas todo dia, com piadas e ciência no meio do caminho. Toque para assistir ao vídeo.",
+    "links": [
+      {"rotulo": "▶ Assistir no Facebook", "url": "https://www.facebook.com/reel/1091719486779110/"},
+      {"rotulo": "▶ Assistir no Instagram", "url": "https://www.instagram.com/reel/Dd7x7bzkXDg/"},
+      {"rotulo": "Entrar no canal do Telegram", "url": "https://t.me/abriuocofre"},
+      {"rotulo": "Ver o site", "url": "https://abriuocofre.github.io/"}
+    ]
+  }
+]
