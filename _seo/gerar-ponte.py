@@ -143,6 +143,11 @@ def conferir(p: dict) -> None:
     for padrao, nome in PROIBIDO:
         if re.search(padrao, texto):
             sys.exit(f"RECUSADO ({p['apelido']}): {nome} no texto da pagina.")
+    if p["loja"] == "magalu":
+        # A Magalu respondeu por escrito em 02/10/2026 (protocolo 151830386):
+        # pagina-ponte propria viola o contrato e ela mandou retirar. So volta
+        # com autorizacao escrita dela.
+        sys.exit(f"RECUSADO ({p['apelido']}): a Magalu proibiu pagina-ponte em 02/10/2026.")
     if p["loja"] not in LOJAS:
         sys.exit(f"RECUSADO ({p['apelido']}): loja desconhecida '{p['loja']}'.")
     if p["loja"] == "amazon" and "tag=abriuocofre" not in p["link"]:
