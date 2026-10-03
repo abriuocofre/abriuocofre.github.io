@@ -30,7 +30,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 SITE = "https://abriuocofre.github.io"
-IMAGEM = f"{SITE}/marca/avatar-cofre-600.jpg"   # quadrada, < 100 KB (o WhatsApp descarta miniatura pesada)
+IMAGEM = f"{SITE}/marca/og-cofre-1200x630-leve.jpg"   # 1200x630 (cartao grande no WhatsApp: a quadrada vira miniatura e borra), < 100 KB
 
 PAGINA = """<!doctype html>
 <html lang="pt-BR">
@@ -48,9 +48,9 @@ PAGINA = """<!doctype html>
 <meta property="og:description" content="{descricao}">
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{imagem}">
-<meta property="og:image:width" content="600">
-<meta property="og:image:height" content="600">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{imagem}">
 <style>
 :root{{color-scheme:dark;--ouro:#f2b84b;--fundo:#0e0b08;--painel:#1a1510;--texto:#f3ece0}}
@@ -93,8 +93,8 @@ def botoes(links: list[dict]) -> str:
 
 def main() -> int:
     itens = json.loads((RAIZ / "_seo" / "videos.json").read_text(encoding="utf-8"))
-    if not (RAIZ / "marca" / "avatar-cofre-600.jpg").exists():
-        sys.exit("Falta marca/avatar-cofre-600.jpg (a miniatura).")
+    if not (RAIZ / "marca" / "og-cofre-1200x630-leve.jpg").exists():
+        sys.exit("Falta marca/og-cofre-1200x630-leve.jpg (a miniatura).")
     (RAIZ / "v").mkdir(exist_ok=True)
     for v in itens:
         slug = v["slug"]
