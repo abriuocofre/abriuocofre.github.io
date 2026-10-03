@@ -112,6 +112,8 @@ def itens_propaganda(d: dict) -> list[dict]:
         if p.get("tipo") == "video":
             continue                      # video sai como Reel, sem ponte
         nome = p["nome"]
+        if "magalu" in nome.lower():
+            continue                      # contrato 11.6: o nome da loja nao aparece em texto/URL nosso; fica como foto
         saida.append({
             "apelido": f"pr-{nome}".lower(),
             "familia": nome,
