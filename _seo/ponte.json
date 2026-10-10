@@ -1,56 +1,281 @@
 [
   {
-    "apelido": "liquidificador-philips-walita-5000",
-    "loja": "magalu",
-    "arte": "../artes-instagram/molde-produto/228872300-molde.jpg",
-    "titulo": "Liquidificador Philips Walita Série 5000",
+    "apelido": "carregador-portatil-i2go",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-13-powerbank-i2go-molde.jpg",
+    "titulo": "Carregador portátil i2go",
     "selo": "achado do dia",
-    "resumo": "1400W e 12 velocidades, em preto e inox: suco, vitamina e gelo sem sofrimento.",
-    "link": "https://www.magazinevoce.com.br/magazineabriuocofre/liquidificador-philips-walita-serie-5000-ri2244-91-preto-inox-12-velocidades-1400w/p/228872300/ep/liqu/"
+    "resumo": "20.000 mAh para viagem, apagão e dia longo fora de casa.",
+    "link": "https://www.amazon.com.br/dp/B094YR4SLJ?tag=abriuocofrefb-20"
   },
   {
-    "apelido": "liquidificador-mondial-turbo-l99",
-    "loja": "magalu",
-    "arte": "../artes-instagram/molde-produto/021756600-molde.jpg",
-    "titulo": "Liquidificador Mondial Turbo Power L-99",
-    "selo": "mais vendido",
-    "resumo": "550W, 3 velocidades e filtro: o liquidificador simples que dá conta do dia a dia.",
-    "link": "https://www.magazinevoce.com.br/magazineabriuocofre/liquidificador-mondial-turbo-power-l-99-fb-preto-com-filtro-3-velocidades-550w/p/021756600/ep/liqu/"
-  },
-  {
-    "apelido": "air-fryer-mondial-family-4l",
-    "loja": "magalu",
-    "arte": "../artes-instagram/molde-produto/228887000-molde.jpg",
-    "titulo": "Air fryer Mondial Family 4 litros",
+    "apelido": "kindle-11-geracao",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-16-kindle-11-molde.jpg",
+    "titulo": "Kindle 11ª geração",
     "selo": "achado do dia",
-    "resumo": "Quatro litros, timer e acabamento em inox: fritura sem óleo para a família pequena.",
-    "link": "https://www.magazinevoce.com.br/magazineabriuocofre/air-fryer-mondial-family-afn-40-bi-preto-e-inox-4l-com-timer/p/228887000/ep/efso/"
+    "resumo": "Tela sem brilho de celular, com luz embutida: lê no sol e na cama.",
+    "link": "https://www.amazon.com.br/dp/B09SWTG9GF?tag=abriuocofrefb-20"
   },
   {
-    "apelido": "batedeira-mondial-pratica-b44",
-    "loja": "magalu",
-    "arte": "../artes-instagram/molde-produto/021289100-molde.jpg",
-    "titulo": "Batedeira Mondial Prática B-44",
-    "selo": "mais vendido",
-    "resumo": "400W, 3 velocidades e tigela: bolo e massa de todo dia, sem cansar o braço.",
-    "link": "https://www.magazinevoce.com.br/magazineabriuocofre/batedeira-mondial-preta-400w-pratica-b-44-b-3-velocidades/p/021289100/ep/btdc/"
-  },
-  {
-    "apelido": "grill-sanduicheira-britania-press",
-    "loja": "magalu",
-    "arte": "../artes-instagram/molde-produto/235076200-molde.jpg",
-    "titulo": "Grill e sanduicheira Britânia Press",
+    "apelido": "jogo-panelas-tramontina",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-17-panelas-tramontina-molde.jpg",
+    "titulo": "Jogo de panelas Tramontina",
     "selo": "achado do dia",
-    "resumo": "2 em 1, 850W e antiaderente: misto-quente de manhã, carne na grelha à noite.",
-    "link": "https://www.magazinevoce.com.br/magazineabriuocofre/sanduicheira-grill-britania-press-bgr27i-2-em-1-prata-850w-antiaderente/p/235076200/ep/epgr/"
+    "resumo": "Linha Sicília: panelas antiaderentes, e vem com colher.",
+    "link": "https://www.amazon.com.br/dp/B086YK7M5Y?tag=abriuocofrefb-20"
   },
   {
-    "apelido": "aspirador-vertical-electrolux-stk14",
-    "loja": "magalu",
-    "arte": "../artes-instagram/molde-produto/230023900-molde.jpg",
-    "titulo": "Aspirador vertical Electrolux com filtro HEPA",
-    "selo": "mais vendido",
-    "resumo": "1450W, vira aspirador de mão e segura a poeira fina no filtro HEPA.",
-    "link": "https://www.magazinevoce.com.br/magazineabriuocofre/aspirador-de-po-vertical-e-portatil-electrolux-filtro-hepa-1450w-plus-stk14-denim-blue/p/230023900/ep/elat/"
+    "apelido": "garrafa-termica-stanley-1-litro",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-18-stanley-1l-molde.jpg",
+    "titulo": "Garrafa térmica Stanley 1 litro",
+    "selo": "achado do dia",
+    "resumo": "Clássica, com boca larga, 1 litro e tampa que vira copo.",
+    "link": "https://www.amazon.com.br/dp/B0CGY1H894?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "filtro-linha-intelbras",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-19-filtro-intelbras-molde.jpg",
+    "titulo": "Filtro de linha Intelbras",
+    "selo": "achado do dia",
+    "resumo": "Modelo EPE 204+, para proteger a TV e o computador, com 4 tomadas e 2 USB.",
+    "link": "https://www.amazon.com.br/dp/B09BDF296F?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "mop-giratorio-com-balde",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-20-mop-giratorio-molde.jpg",
+    "titulo": "Mop giratório com balde",
+    "selo": "achado do dia",
+    "resumo": "Giratório, com centrífuga e balde: torce sem molhar a mão.",
+    "link": "https://www.amazon.com.br/dp/B08DJ8WBSD?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "camera-wifi-intelbras-im3-c",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-21-camera-intelbras-molde.jpg",
+    "titulo": "Câmera Wi-Fi Intelbras IM3 C",
+    "selo": "achado do dia",
+    "resumo": "Veja a casa pelo celular, com Full HD, visão noturna e fala e escuta.",
+    "link": "https://www.amazon.com.br/dp/B09Q3K4YLS?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "repetidor-wifi-tp-link-re200",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-22-repetidor-tplink-molde.jpg",
+    "titulo": "Repetidor Wi-Fi TP-Link RE200",
+    "selo": "achado do dia",
+    "resumo": "Leva o sinal ao cômodo esquecido da casa, no modelo RE200.",
+    "link": "https://www.amazon.com.br/dp/B0755PV4H7?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "protetor-solar-nivea-fps-70",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-23-protetor-nivea-molde.jpg",
+    "titulo": "Protetor solar Nivea FPS 70",
+    "selo": "achado do dia",
+    "resumo": "Facial, de toque seco, com FPS 70: segura o brilho no dia.",
+    "link": "https://www.amazon.com.br/dp/B0BD6755LC?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "sanduicheira-britania-press",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-24-sanduicheira-britania-molde.jpg",
+    "titulo": "Sanduicheira Britânia Press",
+    "selo": "achado do dia",
+    "resumo": "Sanduicheira e grill de 850 W, na versão 127 V.",
+    "link": "https://www.amazon.com.br/dp/B09WWY48B7?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "vaporizador-black-decker",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-25-vaporizador-roupas-molde.jpg",
+    "titulo": "Vaporizador Black+Decker",
+    "selo": "achado do dia",
+    "resumo": "3 em 1, bivolt e cabe na mala, sem tábua de passar.",
+    "link": "https://www.amazon.com.br/dp/B08B6DLFYD?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "fone-xiaomi-redmi-buds-4",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-26-redmi-buds4-molde.jpg",
+    "titulo": "Fone Xiaomi Redmi Buds 4",
+    "selo": "achado do dia",
+    "resumo": "Sem fio, cancela o ruído e tem mais de 30 h de uso.",
+    "link": "https://www.amazon.com.br/dp/B0B3XFRF6X?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "maleta-sparta-129-pecas",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-27-maleta-sparta-molde.jpg",
+    "titulo": "Maleta Sparta 129 peças",
+    "selo": "achado do dia",
+    "resumo": "Chaves, soquetes e alicate na mesma maleta, com 129 peças.",
+    "link": "https://www.amazon.com.br/dp/B076N2S8FV?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "caneca-termica-lumai-350-ml",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-28-caneca-lumai-molde.jpg",
+    "titulo": "Caneca térmica Lumai 350 ml",
+    "selo": "achado do dia",
+    "resumo": "Em aço inox de 350 ml, mantém a temperatura do café.",
+    "link": "https://www.amazon.com.br/dp/B0CT61XYBM?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "kit-churrasco-tramontina",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-29-churrasco-tramontina-molde.jpg",
+    "titulo": "Kit churrasco Tramontina",
+    "selo": "achado do dia",
+    "resumo": "Kit tradicional de 3 peças, com lâminas de inox.",
+    "link": "https://www.amazon.com.br/dp/B07GS3MLJX?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "garrafa-esportiva-modus",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-30-garrafa-modus-molde.jpg",
+    "titulo": "Garrafa esportiva Modus",
+    "selo": "achado do dia",
+    "resumo": "Térmica e leve, para treino e para o trabalho.",
+    "link": "https://www.amazon.com.br/dp/B0CY44C3Y4?tag=abriuocofrefb-20"
+  },
+  {
+    "apelido": "ventilador-mondial-30-cm",
+    "loja": "amazon",
+    "arte": "../artes-instagram/molde-produto/azf-31-ventilador-mesa-molde.jpg",
+    "titulo": "Ventilador Mondial 30 cm",
+    "selo": "achado do dia",
+    "resumo": "Ventilador de 30 cm com 6 pás, versão 110 V: confira a tomada de casa.",
+    "link": "https://www.amazon.com.br/dp/B09B16LRD1?tag=abriuocofretg-20"
+  },
+  {
+    "apelido": "calca-jeans-masculina",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-10-calca-jeans-molde.jpg",
+    "titulo": "Calça jeans masculina",
+    "selo": "achado do dia",
+    "resumo": "Com elastano e corte reto: senta e agacha sem repuxar.",
+    "link": "https://meli.la/2fxksPj"
+  },
+  {
+    "apelido": "faqueiro-24-pecas",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-14-faqueiro-tramontina-molde.jpg",
+    "titulo": "Faqueiro 24 peças",
+    "selo": "achado do dia",
+    "resumo": "Tramontina Búzios, em aço inox, com serviço completo para seis pessoas.",
+    "link": "https://meli.la/1CnLq76"
+  },
+  {
+    "apelido": "aparador-mondial",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-19-aparador-mondial-molde.jpg",
+    "titulo": "Aparador Mondial",
+    "selo": "achado do dia",
+    "resumo": "Supergroom-10 para pelos, bivolt, com dez acessórios.",
+    "link": "https://meli.la/1fe9Bvx"
+  },
+  {
+    "apelido": "kit-3-body-splash-200-ml",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-20-body-splash-molde.jpg",
+    "titulo": "Kit 3 body splash 200 ml",
+    "selo": "achado do dia",
+    "resumo": "Barbarius, Enigma e Midtown, em frascos grandes de 200 ml cada.",
+    "link": "https://meli.la/2Ud9WSd"
+  },
+  {
+    "apelido": "kit-wella-nutri-enrich",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-21-wella-invigo-molde.jpg",
+    "titulo": "Kit Wella Nutri-enrich",
+    "selo": "achado do dia",
+    "resumo": "Invigo, com shampoo e condicionador da mesma linha.",
+    "link": "https://meli.la/1nrN1QM"
+  },
+  {
+    "apelido": "palmilha-gel-kallucci",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-22-palmilha-gel-molde.jpg",
+    "titulo": "Palmilha de gel Kallucci",
+    "selo": "achado do dia",
+    "resumo": "Anatômica, recorta no número do seu pé.",
+    "link": "https://meli.la/1zeawqm"
+  },
+  {
+    "apelido": "microfone-de-lapela",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-23-microfone-lapela-molde.jpg",
+    "titulo": "Microfone de lapela",
+    "selo": "achado do dia",
+    "resumo": "Sem fio, tipo C, com estojo; prende na camisa.",
+    "link": "https://meli.la/1ejFAvb"
+  },
+  {
+    "apelido": "jaqueta-corta-vento",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-24-jaqueta-cortavento-molde.jpg",
+    "titulo": "Jaqueta corta-vento",
+    "selo": "achado do dia",
+    "resumo": "Linha Izing Fit Aspen, feminina, com capuz e modelo leve.",
+    "link": "https://meli.la/1a4Dr8g"
+  },
+  {
+    "apelido": "varal-chao-3-andares",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-25-varal-chao-molde.jpg",
+    "titulo": "Varal de chão 3 andares",
+    "selo": "achado do dia",
+    "resumo": "Dobra e encosta na parede quando a roupa termina de secar.",
+    "link": "https://meli.la/2R9JMLQ"
+  },
+  {
+    "apelido": "kit-10-potes-vidro",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-26-potes-vidro-molde.jpg",
+    "titulo": "Kit 10 potes de vidro",
+    "selo": "achado do dia",
+    "resumo": "Vidro não guarda cheiro nem mancha com molho de tomate.",
+    "link": "https://meli.la/2tETpmw"
+  },
+  {
+    "apelido": "impressora-hp-smart-tank-584",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-27-impressora-hp-molde.jpg",
+    "titulo": "Impressora HP Smart Tank 584",
+    "selo": "achado do dia",
+    "resumo": "Modelo 584 com tanque de tinta, em vez de cartucho.",
+    "link": "https://meli.la/2jZTUMM"
+  },
+  {
+    "apelido": "sabao-liquido-omo-5-litros",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-28-sabao-omo-molde.jpg",
+    "titulo": "Sabão líquido Omo 5 litros",
+    "selo": "achado do dia",
+    "resumo": "Lavagem Perfeita, em galão de cinco litros.",
+    "link": "https://meli.la/1hGj198"
+  },
+  {
+    "apelido": "kit-catraca-46-pecas",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-29-catraca-46-molde.jpg",
+    "titulo": "Kit catraca 46 peças",
+    "selo": "achado do dia",
+    "resumo": "Soquetes em cromo-vanádio na maleta organizadora.",
+    "link": "https://meli.la/1Dcc3by"
+  },
+  {
+    "apelido": "mini-compressor-de-ar-digital",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/mlf-30-compressor-ar-molde.jpg",
+    "titulo": "Mini compressor de ar digital",
+    "selo": "achado do dia",
+    "resumo": "Digital, sem fio, com visor e até 150 psi.",
+    "link": "https://meli.la/2Ddo8KM"
   }
 ]
