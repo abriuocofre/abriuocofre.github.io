@@ -61,6 +61,33 @@ _gp = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_gp)
 CSS, quadrado = _gp.CSS, _gp.quadrado
 
+# Cartao (ca-): og:image "largo" 1200x630 (11/10/2026). A Meta corta o quadrado
+# 800x800 pelo centro numa janela de ~1,9:1 e perdia topo e rodape do cartao; no
+# largo a arte inteira cabe na altura (630) e as laterais sao ela desfocada.
+OG_W, OG_H = 1200, 630
+
+
+def largo(arte: Path, saida: Path, w: int = OG_W, h: int = OG_H) -> None:
+    from PIL import Image, ImageEnhance, ImageFilter
+    im = Image.open(arte).convert("RGB")
+    alta = round(w * im.height / im.width)
+    fundo = im.resize((w, alta)).crop((0, (alta - h) // 2, w, (alta - h) // 2 + h))
+    fundo = ImageEnhance.Brightness(fundo.filter(ImageFilter.GaussianBlur(40))).enhance(0.45)
+    larg = round(im.width * h / im.height)
+    fundo.paste(im.resize((larg, h), Image.LANCZOS), ((w - larg) // 2, 0))
+    fundo.save(saida, quality=88, optimize=True)
+
+
+def medida_og(apelido: str) -> tuple[int, int]:
+    return (OG_W, OG_H) if apelido.startswith("ca-") else (LADO, LADO)
+
+
+def gerar_og(apelido: str, arte: Path, saida: Path) -> None:
+    if apelido.startswith("ca-"):
+        largo(arte, saida)
+    else:
+        quadrado(arte, saida, LADO)
+
 PROIBIDO = re.compile(r"(?i)magalu|magazine\s*luiza|R\$|\d+,\d{2}\b|\bnota\b|avalia")
 GENERICO = "Abriu o Cofre — ofertas, humor e conhecimento todo dia"
 
@@ -165,8 +192,8 @@ def pagina(it: dict, titulo: str, url_botao: str, texto_botao: str, etiqueta: st
 <meta property="og:title" content="{t}">
 <meta property="og:description" content="{desc}">
 <meta property="og:image" content="{img}">
-<meta property="og:image:width" content="{LADO}">
-<meta property="og:image:height" content="{LADO}">
+<meta property="og:image:width" content="{medida_og(ap)[0]}">
+<meta property="og:image:height" content="{medida_og(ap)[1]}">
 <meta property="og:image:alt" content="{t}">
 <meta property="og:url" content="{url}">
 <meta property="og:site_name" content="Abriu o Cofre">
@@ -220,13 +247,17 @@ def main() -> int:
     ap.add_argument("--automacao", required=True, help="pasta automacao-nuvem (copia da nuvem)")
     ap.add_argument("--gravar", action="store_true")
     ap.add_argument("--so", help="apelido unico (ex.: ca-pia-b05)")
-    ap.add_argument("--refazer-imagem", action="store_true")
+    ap.add_argument("--refazer-imagem", action="store_true",
+                    help="refaz o og de tudo o que o filtro pega; com ca-, tambem as paginas ca-* antigas ja' no site")
+    ap.add_argument("--prefixo", help="so' este prefixo de apelido (ex.: ca-)")
     a = ap.parse_args()
     auto = Path(a.automacao)
 
     prop = json.loads((auto / "propaganda.json").read_bytes().decode("utf-8-sig"))
     fila = json.loads((auto / "fila-instagram.json").read_bytes().decode("utf-8-sig"))
     itens = itens_propaganda(prop) + itens_cartoes(fila)
+    if a.prefixo:
+        itens = [i for i in itens if i["apelido"].startswith(a.prefixo)]
     if a.so:
         itens = [i for i in itens if i["apelido"] == a.so]
         if not itens:
@@ -259,9 +290,41 @@ def main() -> int:
             og = RAIZ / "img" / "ponte" / f"{it['apelido']}-og.jpg"
             og.parent.mkdir(parents=True, exist_ok=True)
             if a.refazer_imagem or not og.exists():
-                quadrado(arte, og, LADO)
+                gerar_og(it["apelido"], arte, og)
         feitos += 1
     print(f"{feitos} paginas {'gravadas' if a.gravar else '(ensaio)'}; {faltam} sem arte.")
+
+    # Paginas ca-* que ja' estao no site mas saíram da fila (cartao ja' publicado ou
+    # trocado): sem isso ficariam com o og antigo. Le a arte de dentro da pagina.
+    if a.refazer_imagem and not a.so and (not a.prefixo or "ca-".startswith(a.prefixo) or a.prefixo.startswith("ca-")):
+        feitas = {i["apelido"] for i in itens}
+        velhas = 0
+        for pag in sorted((RAIZ / "p").glob("ca-*.html")):
+            apelido = pag.stem
+            if apelido in feitas or (a.prefixo and not apelido.startswith(a.prefixo)):
+                continue
+            html = pag.read_bytes().decode("utf-8")
+            m = re.search(r'<figure class="foto"><a [^>]*><img src="([^"]+)"', html)
+            if not m:
+                print(f"AVISO: {pag.name} sem arte legivel; fica como esta.")
+                faltam += 1
+                continue
+            arte = local_da_arte(m.group(1))
+            if not arte.exists():
+                print(f"FALTA a arte de {apelido}: {arte}")
+                faltam += 1
+                continue
+            w, h = medida_og(apelido)
+            novo = re.sub(r'(og:image:width" content=")\d+', rf"\g<1>{w}", html)
+            novo = re.sub(r'(og:image:height" content=")\d+', rf"\g<1>{h}", novo)
+            print(f"{'ok ' if a.gravar else 'ens'} og de p/{pag.name} (ja' no site) -> {w}x{h}")
+            if a.gravar:
+                pag.write_bytes(novo.encode("utf-8"))
+                og = RAIZ / "img" / "ponte" / f"{apelido}-og.jpg"
+                og.parent.mkdir(parents=True, exist_ok=True)
+                gerar_og(apelido, arte, og)
+            velhas += 1
+        print(f"{velhas} paginas antigas do site {'refeitas' if a.gravar else '(ensaio)'}.")
     return 1 if faltam else 0
 
 
