@@ -1,5 +1,5 @@
 {
-  "atualizado": "—",
+  "atualizado": "12/10/2026",
   "base": "https://abriuocofre.github.io",
   "cartoes": [
     {
@@ -165,10 +165,34 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-015.jpg"
     },
     {
+      "codigo": "mot-017",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-017.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-017.jpg"
+    },
+    {
+      "codigo": "mot-019",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-019.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-019.jpg"
+    },
+    {
       "codigo": "mot-020",
       "familia": "mot",
       "url": "https://abriuocofre.github.io/cartoes-jpg/mot-020.jpg",
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-020.jpg"
+    },
+    {
+      "codigo": "mot-022",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-022.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-022.jpg"
+    },
+    {
+      "codigo": "mot-023",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-023.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-023.jpg"
     },
     {
       "codigo": "mot-024",
@@ -207,6 +231,12 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-029.jpg"
     },
     {
+      "codigo": "mot-030",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-030.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-030.jpg"
+    },
+    {
       "codigo": "mot-031",
       "familia": "mot",
       "url": "https://abriuocofre.github.io/cartoes-jpg/mot-031.jpg",
@@ -231,6 +261,18 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-037.jpg"
     },
     {
+      "codigo": "mot-039",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-039.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-039.jpg"
+    },
+    {
+      "codigo": "mot-046",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-046.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-046.jpg"
+    },
+    {
       "codigo": "mot-057",
       "familia": "mot",
       "url": "https://abriuocofre.github.io/cartoes-jpg/mot-057.jpg",
@@ -241,6 +283,12 @@
       "familia": "mot",
       "url": "https://abriuocofre.github.io/cartoes-jpg/mot-059.jpg",
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-059.jpg"
+    },
+    {
+      "codigo": "mot-060",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-060.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-060.jpg"
     },
     {
       "codigo": "mot-061",
@@ -283,6 +331,12 @@
       "familia": "mot",
       "url": "https://abriuocofre.github.io/cartoes-jpg/mot-076.jpg",
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-076.jpg"
+    },
+    {
+      "codigo": "mot-079",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-079.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-079.jpg"
     },
     {
       "codigo": "mot-081",
@@ -351,10 +405,22 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/mot-100.jpg"
     },
     {
+      "codigo": "mot-101",
+      "familia": "mot",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/mot-101.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/mot-101.jpg"
+    },
+    {
       "codigo": "pen-001",
       "familia": "pen",
       "url": "https://abriuocofre.github.io/cartoes-jpg/pen-001.jpg",
       "url_vitrine": "https://abriuocofre.github.io/galeria/pen-001.jpg"
+    },
+    {
+      "codigo": "pen-002",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-002.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-002.jpg"
     },
     {
       "codigo": "pen-003",
@@ -387,6 +453,12 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/pen-018.jpg"
     },
     {
+      "codigo": "pen-020",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-020.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-020.jpg"
+    },
+    {
       "codigo": "pen-021",
       "familia": "pen",
       "url": "https://abriuocofre.github.io/cartoes-jpg/pen-021.jpg",
@@ -417,6 +489,12 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/pen-028.jpg"
     },
     {
+      "codigo": "pen-030",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-030.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-030.jpg"
+    },
+    {
       "codigo": "pen-032",
       "familia": "pen",
       "url": "https://abriuocofre.github.io/cartoes-jpg/pen-032.jpg",
@@ -433,6 +511,12 @@
       "familia": "pen",
       "url": "https://abriuocofre.github.io/cartoes-jpg/pen-034.jpg",
       "url_vitrine": "https://abriuocofre.github.io/galeria/pen-034.jpg"
+    },
+    {
+      "codigo": "pen-039",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-039.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-039.jpg"
     },
     {
       "codigo": "pen-042",
@@ -483,6 +567,24 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/pen-060.jpg"
     },
     {
+      "codigo": "pen-061",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-061.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-061.jpg"
+    },
+    {
+      "codigo": "pen-064",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-064.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-064.jpg"
+    },
+    {
+      "codigo": "pen-065",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-065.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-065.jpg"
+    },
+    {
       "codigo": "pen-070",
       "familia": "pen",
       "url": "https://abriuocofre.github.io/cartoes-jpg/pen-070.jpg",
@@ -505,6 +607,12 @@
       "familia": "pen",
       "url": "https://abriuocofre.github.io/cartoes-jpg/pen-085.jpg",
       "url_vitrine": "https://abriuocofre.github.io/galeria/pen-085.jpg"
+    },
+    {
+      "codigo": "pen-093",
+      "familia": "pen",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pen-093.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pen-093.jpg"
     },
     {
       "codigo": "pen-100",
@@ -585,6 +693,66 @@
       "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b10.jpg"
     },
     {
+      "codigo": "pia-b11",
+      "familia": "pia",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pia-b11.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b11.jpg"
+    },
+    {
+      "codigo": "pia-b12",
+      "familia": "pia",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pia-b12.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b12.jpg"
+    },
+    {
+      "codigo": "pia-b13",
+      "familia": "pia",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pia-b13.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b13.jpg"
+    },
+    {
+      "codigo": "pia-b14",
+      "familia": "pia",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pia-b14.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b14.jpg"
+    },
+    {
+      "codigo": "pia-b15",
+      "familia": "pia",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pia-b15.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b15.jpg"
+    },
+    {
+      "codigo": "pia-b16",
+      "familia": "pia",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/pia-b16.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/pia-b16.jpg"
+    },
+    {
+      "codigo": "poe-001",
+      "familia": "poe",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/poe-001.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/poe-001.jpg"
+    },
+    {
+      "codigo": "poe-002",
+      "familia": "poe",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/poe-002.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/poe-002.jpg"
+    },
+    {
+      "codigo": "poe-003",
+      "familia": "poe",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/poe-003.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/poe-003.jpg"
+    },
+    {
+      "codigo": "poe-004",
+      "familia": "poe",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/poe-004.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/poe-004.jpg"
+    },
+    {
       "codigo": "rei-001",
       "familia": "rei",
       "url": "https://abriuocofre.github.io/cartoes-jpg/rei-001.jpg",
@@ -613,6 +781,78 @@
       "familia": "rei",
       "url": "https://abriuocofre.github.io/cartoes-jpg/rei-005.jpg",
       "url_vitrine": "https://abriuocofre.github.io/galeria/rei-005.jpg"
+    },
+    {
+      "codigo": "rei-006",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-006.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-006.jpg"
+    },
+    {
+      "codigo": "rei-007",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-007.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-007.jpg"
+    },
+    {
+      "codigo": "rei-008",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-008.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-008.jpg"
+    },
+    {
+      "codigo": "rei-009",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-009.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-009.jpg"
+    },
+    {
+      "codigo": "rei-010",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-010.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-010.jpg"
+    },
+    {
+      "codigo": "rei-011",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-011.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-011.jpg"
+    },
+    {
+      "codigo": "rei-012",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-012.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-012.jpg"
+    },
+    {
+      "codigo": "rei-013",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-013.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-013.jpg"
+    },
+    {
+      "codigo": "rei-014",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-014.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-014.jpg"
+    },
+    {
+      "codigo": "rei-015",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-015.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-015.jpg"
+    },
+    {
+      "codigo": "rei-016",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-016.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-016.jpg"
+    },
+    {
+      "codigo": "rei-017",
+      "familia": "rei",
+      "url": "https://abriuocofre.github.io/cartoes-jpg/rei-017.jpg",
+      "url_vitrine": "https://abriuocofre.github.io/galeria/rei-017.jpg"
     }
   ]
 }
