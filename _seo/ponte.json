@@ -164,7 +164,7 @@
   {
     "apelido": "faqueiro-24-pecas",
     "loja": "mercadolivre",
-    "arte": "../artes-instagram/molde-produto/mlf-14-faqueiro-tramontina-molde.jpg",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-14-faqueiro-tramontina.jpg",
     "titulo": "Faqueiro 24 peças",
     "selo": "achado do dia",
     "resumo": "Tramontina Búzios, em aço inox, com serviço completo para seis pessoas.",
@@ -277,5 +277,95 @@
     "selo": "achado do dia",
     "resumo": "Digital, sem fio, com visor e até 150 psi.",
     "link": "https://meli.la/2Ddo8KM"
+  },
+  {
+    "apelido": "kit-2-cameras-wi-fi-icsee",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-09-cameras-icsee.jpg",
+    "titulo": "Kit 2 câmeras de segurança wi-fi",
+    "selo": "achado do dia",
+    "resumo": "Duas câmeras iCSee para uso interno e externo, com infravermelho.",
+    "link": "https://meli.la/23gmfeW"
+  },
+  {
+    "apelido": "tenis-kappa-park-2-0",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-12-tenis-kappa.jpg",
+    "titulo": "Tênis Kappa Park 2.0",
+    "selo": "achado do dia",
+    "resumo": "Tênis unissex para caminhada e academia, em preto com detalhe dourado.",
+    "link": "https://meli.la/2nBmood"
+  },
+  {
+    "apelido": "garrafa-stanley-aerolight-473-ml",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-13-stanley-473.jpg",
+    "titulo": "Garrafa Stanley Aerolight 473 ml",
+    "selo": "achado do dia",
+    "resumo": "Aço inox e canudo retrátil, na versão leve da Stanley.",
+    "link": "https://meli.la/2arixzz"
+  },
+  {
+    "apelido": "kit-50-cabides-veludo-preto",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-16-cabides-veludo.jpg",
+    "titulo": "Kit 50 cabides de veludo",
+    "selo": "achado do dia",
+    "resumo": "Veludo antideslizante e perfil fino, para aproveitar o espaço do guarda-roupa.",
+    "link": "https://meli.la/139EXgo"
+  },
+  {
+    "apelido": "hidratante-mantecorp-hydraporin-al",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-17-hidratante-mantecorp.jpg",
+    "titulo": "Hidratante Mantecorp Hydraporin AL",
+    "selo": "achado do dia",
+    "resumo": "Loção hidratante de 120 g para pele seca e extrasseca.",
+    "link": "https://meli.la/1BNaseo"
+  },
+  {
+    "apelido": "creatina-soldiers-1-kg",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-01-creatina.jpg",
+    "titulo": "Creatina Soldiers 1 kg",
+    "selo": "achado do dia",
+    "resumo": "Creatina monohidratada em pote de 1 kg, sabor natural.",
+    "link": "https://meli.la/1dcn6E4"
+  },
+  {
+    "apelido": "parafusadeira-furadeira-2-baterias-maleta",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-04-parafusadeira.jpg",
+    "titulo": "Parafusadeira e furadeira com maleta",
+    "selo": "achado do dia",
+    "resumo": "Duas baterias, luz de LED e kit de acessórios na maleta.",
+    "link": "https://meli.la/2ifkSsj"
+  },
+  {
+    "apelido": "lavadora-lava-jato-portatil-2-baterias",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-05-lava-jato.jpg",
+    "titulo": "Lavadora lava-jato portátil",
+    "selo": "achado do dia",
+    "resumo": "Sem fio, com duas baterias, maleta e acessórios.",
+    "link": "https://meli.la/2cGUqFq"
+  },
+  {
+    "apelido": "garnier-vitamina-c-toque-seco",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-07-gel-facial-garnier.jpg",
+    "titulo": "Garnier Vitamina C Toque Seco",
+    "selo": "achado do dia",
+    "resumo": "Hidratante facial de toque seco e efeito matte, da linha Vitamina C.",
+    "link": "https://meli.la/22zbnt4"
+  },
+  {
+    "apelido": "air-fryer-mondial-4-litros",
+    "loja": "mercadolivre",
+    "arte": "../artes-instagram/molde-produto/foto-mlf-08-airfryer-mondial.jpg",
+    "titulo": "Air fryer Mondial 4 litros",
+    "selo": "achado do dia",
+    "resumo": "Fritadeira sem óleo com controle de temperatura e timer.",
+    "link": "https://meli.la/1ozgPPG"
   }
 ]
