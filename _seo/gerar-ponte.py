@@ -24,8 +24,8 @@ REGRAS QUE ESTE SCRIPT NAO PODE QUEBRAR
 1. A pagina NAO redireciona sozinha. A Meta reprova anuncio cujo destino pula
    para outro site, e a Amazon nao aceita link que esconde o destino. Quem vai
    a loja e' o visitante, pelo botao.
-2. Magalu: o nome da loja nao aparece (contrato 11.6, confirmado por escrito
-   em 21/08/2026). O link ja diz de onde vem.
+2. Magalu: so' o nome "Magalu" foi liberado (14/10/2026, ordem do responsavel
+   da conta). "Magazine Luiza" e "Lu" continuam barrados no conferir().
 3. Preco e nota nao aparecem: envelhecem, e o site e' estatico.
 4. Todo link de afiliado sai com rel="sponsored nofollow noopener".
 """
@@ -141,13 +141,15 @@ h1{font-family:"Chakra Petch","Segoe UI",sans-serif;font-weight:600;
 def conferir(p: dict) -> None:
     texto = " ".join(str(p.get(k, "")) for k in ("titulo", "selo", "resumo"))
     for padrao, nome in PROIBIDO:
+        if p["loja"] == "magalu" and nome.startswith("nome da loja Magalu"):
+            # liberado so' o nome "Magalu" (14/10/2026); "Magazine Luiza" e "Lu" seguem barrados
+            padrao = r"(?i)magazine\s*luiza|\blu\b"
         if re.search(padrao, texto):
             sys.exit(f"RECUSADO ({p['apelido']}): {nome} no texto da pagina.")
-    if p["loja"] == "magalu":
-        # A Magalu respondeu por escrito em 02/10/2026 (protocolo 151830386):
-        # pagina-ponte propria viola o contrato e ela mandou retirar. So volta
-        # com autorizacao escrita dela.
-        sys.exit(f"RECUSADO ({p['apelido']}): a Magalu proibiu pagina-ponte em 02/10/2026.")
+    # 14/10/2026: loja `magalu` LIBERADA a pedido do responsavel da conta (decisao
+    # de 13/10, risco assumido por ele; registro e motivo no cofre, entrada de
+    # 14/10). Nao reativar a trava sem ordem dele: ela existia por causa da
+    # resposta do atendimento de 02/10. Mascote e razao social seguem barrados.
     if p["loja"] not in LOJAS:
         sys.exit(f"RECUSADO ({p['apelido']}): loja desconhecida '{p['loja']}'.")
     if p["loja"] == "amazon" and "tag=abriuocofre" not in p["link"]:
