@@ -1,0 +1,14 @@
+[
+  {
+    "apelido": "teste-canais",
+    "titulo": "Abriu o Cofre: achados da casa, conferidos todo dia",
+    "resumo": "Veja o vídeo e entre nos nossos canais: Telegram, Instagram, Facebook, Threads e Pinterest.",
+    "video": "propaganda/prop-10-cinema-reels.mp4",
+    "capa": "propaganda/prop-10-cinema-reels.jpg",
+    "largura": 1080,
+    "altura": 1920,
+    "botao": "Saiba mais",
+    "destino": "https://abriuocofre.github.io/canais.html",
+    "teste": true
+  }
+]
