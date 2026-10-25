@@ -98,6 +98,7 @@
 
   --amazon:    #FF9900;
   --meli:      #FFE600;
+  --magalu:    #0086FF;
 
   --largura:   1080px;
   --raio:      14px;
@@ -152,6 +153,44 @@ img{ max-width:100%; display:block; }
 .marca-sub{
   font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
   color:var(--tinta-3); margin-top:.3rem;
+}
+
+/* ══ faixa das lojas — os três endereços no alto, antes de qualquer rolagem ══ */
+.faixa-topo{
+  display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  gap:1.2rem 1.5rem;
+}
+.lojas-topo{ display:flex; flex-direction:column; gap:.5rem; align-items:flex-start; }
+.lojas-rotulo{
+  font-size:.66rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--tinta-3);
+}
+.lojas-lista{ display:flex; flex-wrap:wrap; gap:.5rem; }
+.loja-chip{
+  --acento:var(--tinta-2);
+  display:inline-flex; align-items:center; gap:.5rem;
+  min-height:40px; padding:.5rem .95rem;
+  background:var(--aco); border:1px solid var(--risco); border-radius:999px;
+  color:var(--tinta); font-size:.88rem; font-weight:600; text-decoration:none;
+  transition:border-color .15s, background .15s, transform .15s;
+}
+.loja-chip::before{
+  content:""; flex:0 0 auto; width:8px; height:8px; border-radius:50%;
+  background:var(--acento);
+}
+.loja-chip:hover, .loja-chip:focus-visible{
+  border-color:var(--acento); background:var(--aco-alto); transform:translateY(-1px);
+}
+.loja-chip--amazon{ --acento:var(--amazon); }
+.loja-chip--meli{   --acento:var(--meli); }
+.loja-chip--magalu{ --acento:var(--magalu); }
+@media (max-width:420px){
+  .lojas-lista{ gap:.4rem; }
+  .loja-chip{ padding:.5rem .72rem; font-size:.83rem; gap:.42rem; }
+}
+@media (prefers-reduced-motion:reduce){
+  .loja-chip{ transition:none; }
+  .loja-chip:hover, .loja-chip:focus-visible{ transform:none; }
 }
 
 .chamada{
@@ -329,6 +368,8 @@ h2{
 }
 .atalho--meli:hover, .atalho--meli:focus-visible{ border-color:var(--meli); }
 .atalho--meli span{ color:var(--meli); }
+.atalho--magalu:hover, .atalho--magalu:focus-visible{ border-color:var(--magalu); }
+.atalho--magalu span{ color:var(--magalu); }
 @media (max-width:560px){
   .atalho{ grid-template-columns:1fr; gap:.6rem; }
 }
@@ -403,12 +444,26 @@ h2{
 
 <header class="topo">
   <div class="dentro">
-    <div class="marca">
-      <img src="logo.png" alt="" width="60" height="60">
-      <div>
-        <div class="marca-nome">Abriu o <b>Cofre</b></div>
-        <div class="marca-sub">Achados Amazon &amp; Mercado Livre</div>
+    <div class="faixa-topo">
+      <div class="marca">
+        <img src="logo.png" alt="" width="60" height="60">
+        <div>
+          <div class="marca-nome">Abriu o <b>Cofre</b></div>
+          <div class="marca-sub">Achados Amazon &amp; Mercado Livre</div>
+        </div>
       </div>
+
+      <nav class="lojas-topo" aria-label="Minhas lojas">
+        <span class="lojas-rotulo">Minhas lojas · links de afiliado</span>
+        <div class="lojas-lista">
+          <a class="loja-chip loja-chip--amazon" href="https://www.amazon.com.br/?tag=abriuocofre-20"
+             target="_blank" rel="noopener nofollow sponsored">Amazon</a>
+          <a class="loja-chip loja-chip--meli" href="https://meli.la/1EHvp2P"
+             target="_blank" rel="noopener nofollow sponsored">Mercado Livre</a>
+          <a class="loja-chip loja-chip--magalu" href="https://www.magazinevoce.com.br/magazineabriuocofre"
+             target="_blank" rel="noopener nofollow sponsored">Magalu</a>
+        </div>
+      </nav>
     </div>
 
     <h1 class="chamada">O preço bom existe. Ele só <em>não fica à vista</em>.</h1>
@@ -466,15 +521,21 @@ h2{
           </div>
           <span>Abrir na Amazon<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M13 6l6 6-6 6"/></svg></span>
         </a>
-        <a class="atalho atalho--meli" href="#ofertas">
+        <a class="atalho atalho--meli" href="https://meli.la/1EHvp2P"
+           target="_blank" rel="noopener nofollow sponsored">
           <div>
             <h3>Mercado Livre</h3>
-            <p>
-              O Mercado Livre só deixa divulgar produto por produto, sem link
-              geral de loja. Os achados dele estão nas ofertas desta página.
-            </p>
+            <p>Entre pela minha vitrine e procure à vontade. Link de afiliado.</p>
           </div>
-          <span>Ver as ofertas<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M13 6l6 6-6 6"/></svg></span>
+          <span>Abrir no Mercado Livre<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="atalho atalho--magalu" href="https://www.magazinevoce.com.br/magazineabriuocofre"
+           target="_blank" rel="noopener nofollow sponsored">
+          <div>
+            <h3>Magalu</h3>
+            <p>Entre pela minha loja no Magazine Você e procure à vontade. Link de afiliado.</p>
+          </div>
+          <span>Abrir na Magalu<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13"/><path d="M13 6l6 6-6 6"/></svg></span>
         </a>
       </div>
     </div>
