@@ -70,6 +70,16 @@ LOJAS = {
             "Leia as perguntas respondidas: é onde aparece o defeito escondido.",
         ],
     },
+    "kabum": {
+        "tag": "KaBuM!",
+        "botao": "Ver o preço na KaBuM!",
+        "conferir": [
+            "Veja quem vende e envia o produto: a própria KaBuM! ou um parceiro da loja.",
+            "Confira as informações do produto e as condições de compra na página da loja.",
+            "Preço e estoque mudam durante o dia — vale o que estiver na página da loja.",
+        ],
+        "rodape": "Abriu o Cofre é participante de programas de afiliados e recebe comissão pelas compras feitas pelos links, sem custo nenhum para você.",
+    },
 }
 
 TOPO = "Ver na loja"      # botao grande do topo (D1, 01/10/2026)
@@ -158,6 +168,7 @@ def conferir(p: dict) -> None:
 
 def pagina(p: dict) -> str:
     loja = LOJAS[p["loja"]]
+    rodape = loja.get("rodape") or "Abriu o Cofre é participante de programas de afiliados. Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. Nas demais lojas, o canal também recebe comissão — você paga exatamente o mesmo preço."
     url = f"{SITE}/p/{p['apelido']}.html"
     img = f"{SITE}/img/ponte/{p['apelido']}-og.jpg"
     t = escape(p["titulo"])
@@ -232,7 +243,7 @@ def pagina(p: dict) -> str:
 <footer class="rodape">
   <div class="dentro">
     <p><a href="{SITE}/">Todos os achados</a> · <a href="https://t.me/abriuocofre" target="_blank" rel="noopener">Canal no Telegram</a> · <a href="https://www.instagram.com/abriuocofre/" target="_blank" rel="noopener">Instagram</a></p>
-    <p style="margin-top:.7rem">Abriu o Cofre é participante de programas de afiliados. Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. Nas demais lojas, o canal também recebe comissão — você paga exatamente o mesmo preço.</p>
+    <p style="margin-top:.7rem">{escape(rodape)}</p>
   </div>
 </footer>
 </body>
