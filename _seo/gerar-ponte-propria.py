@@ -224,6 +224,7 @@ def pagina(it: dict, titulo: str, url_botao: str, texto_botao: str, etiqueta: st
   <h1>{t}</h1>
   <figure class="foto"><a href="{botao}" target="_blank" rel="noopener"><img src="{escape(it['arte_url'], quote=True)}" alt="{t}" width="1080" height="1350"></a></figure>
   {aviso}
+  {_gp.convite_html(com_telegram="t.me/abriuocofre" not in botao)}
 </main>
 </div>
 <footer class="rodape">

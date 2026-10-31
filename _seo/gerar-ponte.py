@@ -147,6 +147,38 @@ h1{font-family:"Chakra Petch","Segoe UI",sans-serif;font-weight:600;
 .rodape a{color:var(--tinta-2)}
 @media (max-width:520px){.ir{display:flex;width:100%}}"""
 
+# Convite (decisao dele, 30/10/2026, questionario de visibilidade C2): quem ja' clicou
+# e' quem mais provavelmente segue. Fica DEPOIS do botao da loja e com cara de botao
+# secundario (contorno), para nao disputar o clique de compra. Sem preco, sem
+# promessa de desconto.
+TELEGRAM_CANAL = "https://t.me/abriuocofre"
+FACEBOOK_PAGINA = "https://www.facebook.com/abriuocofre"
+CONVITE_CSS = """
+.convite{margin-top:2rem;text-align:center}
+.convite h2{font-family:"Chakra Petch","Segoe UI",sans-serif;font-size:1rem;
+  letter-spacing:.04em;text-transform:uppercase;color:var(--tinta-2)}
+.convite p{margin-top:.35rem;color:var(--tinta-3);font-size:.88rem}
+.convite-botoes{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin-top:.9rem}
+.ir-sec{display:inline-flex;align-items:center;justify-content:center;padding:.75rem 1.2rem;
+  border:1px solid var(--ciano);border-radius:999px;color:var(--ciano);
+  font-weight:600;font-size:.95rem;text-decoration:none}
+.ir-sec:hover{background:rgba(34,211,238,.1)}
+@media (max-width:520px){.ir-sec{width:100%}}"""
+CSS = CSS + CONVITE_CSS
+
+
+def convite_html(com_telegram: bool = True) -> str:
+    """Bloco 'Gostou? Acompanhe', uma linha so' (o acrescentar-convite.py insere IGUAL)."""
+    botoes = ""
+    if com_telegram:
+        botoes += (f'<a class="ir-sec" href="{TELEGRAM_CANAL}" target="_blank" '
+                   f'rel="noopener">Entrar no canal do Telegram</a>')
+    botoes += (f'<a class="ir-sec" href="{FACEBOOK_PAGINA}" target="_blank" '
+               f'rel="noopener">Seguir a Página no Facebook</a>')
+    return ('<section class="convite"><h2>Gostou? Acompanhe o Abriu o Cofre</h2>'
+            '<p>Ofertas conferidas todo dia, sem promessa de desconto.</p>'
+            f'<div class="convite-botoes">{botoes}</div></section>')
+
 
 def conferir(p: dict) -> None:
     texto = " ".join(str(p.get(k, "")) for k in ("titulo", "selo", "resumo"))
@@ -238,6 +270,7 @@ def pagina(p: dict) -> str:
     </ul>
   </section>
   <p>{ir}</p>
+  {convite_html()}
 </main>
 </div>
 <footer class="rodape">
