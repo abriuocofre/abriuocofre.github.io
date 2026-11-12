@@ -198,8 +198,27 @@ def conferir(p: dict) -> None:
         sys.exit(f"RECUSADO ({p['apelido']}): link da Amazon sem a etiqueta.")
 
 
+# 12/11/2026 (ordem dele: «pode»): a pagina da Amazon aceita ?c=ig|fb|th. Com
+# um desses valores o script troca SO' a etiqueta do link da Amazon
+# (abriuocofrefb-20 -> abriuocofre<c>-20), para o relatorio separar as redes.
+# Sem ?c= (ou com outro valor) NADA muda: o HTML ja' sai com a etiqueta fb.
+# Nao e' redirecionamento (regra 1): quem vai a loja continua sendo o visitante,
+# pelo botao. A trava de <script> em main() libera SO' este trecho exato.
+SCRIPT_REDE = (
+    '<script>/* rastreio por rede: ?c=ig|fb|th troca so\' a etiqueta do link da Amazon */\n'
+    '(function(){try{var c=new URLSearchParams(location.search).get("c");'
+    'if(c!=="ig"&&c!=="fb"&&c!=="th")return;'
+    'var l=document.querySelectorAll(\'a[href*="amazon.com.br"]\');'
+    'for(var i=0;i<l.length;i++){l[i].setAttribute("href",'
+    'l[i].getAttribute("href").replace("tag=abriuocofrefb-20","tag=abriuocofre"+c+"-20"));}'
+    '}catch(e){}})();</script>\n'
+)
+
+
 def pagina(p: dict) -> str:
     loja = LOJAS[p["loja"]]
+    # so' pagina com a etiqueta fb (a de padrao); ponte feita para o Telegram (tg) fica como esta'
+    rede_js = SCRIPT_REDE if p["loja"] == "amazon" and "tag=abriuocofrefb-20" in p["link"] else ""
     rodape = loja.get("rodape") or "Abriu o Cofre é participante de programas de afiliados. Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. Nas demais lojas, o canal também recebe comissão — você paga exatamente o mesmo preço."
     url = f"{SITE}/p/{p['apelido']}.html"
     img = f"{SITE}/img/ponte/{p['apelido']}-og.jpg"
@@ -279,7 +298,7 @@ def pagina(p: dict) -> str:
     <p style="margin-top:.7rem">{escape(rodape)}</p>
   </div>
 </footer>
-</body>
+{rede_js}</body>
 </html>
 """
 
@@ -312,7 +331,8 @@ def main() -> int:
         html.parent.mkdir(parents=True, exist_ok=True)
         texto = pagina(p)
         # Trava da regra 1: nenhuma forma de pular sozinho para a loja.
-        if re.search(r"(?i)http-equiv\s*=\s*\"?refresh|location\s*[.=]|<script", texto):
+        # (12/11/2026: libera SO' o trecho SCRIPT_REDE, que nao redireciona)
+        if re.search(r"(?i)http-equiv\s*=\s*\"?refresh|location\s*[.=]|<script", texto.replace(SCRIPT_REDE, "")):
             sys.exit(f"RECUSADO ({p['apelido']}): a pagina redirecionaria sozinha.")
         html.write_bytes(texto.encode("utf-8"))
         print(f"ok  p/{p['apelido']}.html")
